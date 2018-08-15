@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'kybase.html' %}
+  <title>Complete Profile</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/animate.css">
+  <link rel="stylesheet" href="/static/css/ca-form.css">
+</head>
+<style>
+
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.ui-helper-hidden-accessible{
+  display: none;
+
+}
+.ui-menu-item-wrapper{
+
+  background: #f7f7f7;
+  width: 30%;
+}
+ul {
+  list-style-type: none;
+}
+
+</style>
+<body>
+  <div class="container">
+      <div class="row">
+        <hr />
+          <h2>Register with Email</h2>
+
+          <div class="row">
+              <div class="col-sm-5">
+                  <br>
+                  <form action="" role="form" method="POST" id="ca-form" >
+                    {% csrf_token %}
+                      <div class="form-group float-label-control">
+                          <label for="">Email</label>
+                          <input type="email" class="form-control" id="email" name="email" required="true" placeholder="Email">
+                      </div>
+
+                      <div class="form-group float-label-control">
+                          <label for="">Name</label>
+                          <input type="text" class="form-control" id="name" name="name" required="true" placeholder="Name">
+                      </div>
+<div class="form-group float-label-control">
+                          <label for="">Gender</label>
+                          <select class="year" id="gender" name="gender" placeholder="gender" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                            
+                          </select>
+                      </div>
+
+                      <div class="form-group float-label-control">
+                          <label for="">College</label>
+                          <input type="text" id="id_college" name="college" class="form-control" required="true" placeholder="College">
+                      </div>
+
+                      <div class="form-group float-label-control">
+                          <label for="">Choose Year</label>
+                          <select class="year" id="id_year" name="year" placeholder="Year" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
+                            <option value="1">First</option>
+                            <option value="2">Second</option>
+                            <option value="3">Third</option>
+                            <option value="4">Fourth</option>
+                            <option value="5">Fifth</option>
+                          </select>
+                      </div>
+
+                      <div class="form-group float-label-control">
+                          <label for="">Mobile Number</label>
+                          <input type="number" class="form-control" name="mobile_number"  placeholder="Mobile Number">
+                      </div>
+                      <div class="form-group float-label-control">
+                          <label for="">Referral Code</label>
+                          <input type="text" class="form-control" name="ref"  placeholder="Referral Code">
+                      </div>
+                      <div class="form-group float-label-control">
+                          <label for="">Password</label>
+                          <input type="password" class="form-control" name="pass1" id="pass1"  placeholder="Password">
+                      </div>
+                         <div class="form-group float-label-control">
+                          <label for="">Confirm Password</label>
+                          <input type="password" class="form-control" name="pass2" id="pass2"  placeholder="Confirm Password">
+                      </div>
+
+                   
+
+                      <button class="btn btn-submit" id="submit-button" onclick="return Validate()" type="submit">Done</button>
+                  </form>
+
+
+              </div>
+              <div class="col-sm-4 col-sm-offset-3">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h3 class="panel-title">
+                              Important!
+                          </h3>
+                      </div>
+                      <div class="panel-body">
+                          <ul>
+                              <li>Make sure your all your information is correct.</li>
+
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</body>
+<script src="/static/js/jquery-1.11.3.min.js"></script>
+<script src="/static/js/bootstrap-3.3.5.min.js"></script>
+<script src="/static/js/jquery.validate-1.14.0.min.js"></script>
+<script src="/static/js/jquery-validate.bootstrap-tooltip.js"></script>
+<script src="/static/js/ca-form.js" charset="utf-8"></script>
+<script type="text/javascript">
+      var idx=window.location.toString().indexOf("#_=_");
+       if (idx>0) {
+         window.location = window.location.toString().substring(0, idx);
+       }
+
+       function Validate(){
+
+        var pass1= document.getElementById("pass1").value;
+        var pass2= document.getElementById("pass2").value;
+        if (pass1!=pass2){
+          alert("Password do no match.")
+          return false;
+        }
+        return true;
+
+
+       }
+
+
+
+// Wait for the DOM to be ready
+$(document).ready(function() {
+
+  $("#ca-form").validate({
+
+    rules: {
+
+      college: "required",
+      mobile_number: {
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+      },
+        pass1: "required",
+        pass2: "required",
+      pass1: {
+        required: true,
+        minlength: 6,
+       
+      },
+       pass2: {
+        required: true,
+        minlength: 6,
+       
+      },
+      whatsapp_number:{
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+      }, 
+      pincode: {
+        required: true,
+        minlength: 6,
+        maxlength: 6,
+      },
+      reason:{
+        required: true,
+      },
+    },
+
+    submitHandler: function(form) {
+      form.submit();
+          $('#submit-button').prop('disabled', true);
+    }
+  });
+
+});
+</script>
+<!-- <script src="/static/js/1.12.0jquery-ui.min.js"></script> -->
+
+<script>
+
+       //     $( function() {
+       //   var availableTags = [
+       //     {% for clg in all_colleges %}
+       //         "{{clg}}",
+       //     {% endfor %}
+       //   ];
+       //   $("#id_college").autocomplete({
+       //     source: availableTags
+       //   });
+       // } );
+       // // over write the default autocomplete function to match the option starting with term
+       // $.ui.autocomplete.filter = function (array, term) {
+       //   var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+       //   return $.grep(array, function (value) {
+       //     return matcher.test(value.label || value.value || value);
+       //   });
+       // };
+</script>
+</html>

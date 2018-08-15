@@ -1,0 +1,14 @@
+@font-face{
+font-family: mg;
+/*src:url('|harry.ttf');*/
+}
+
+body
+{font-family:mg; }
+.card{
+background-color: darkslategrey;
+}
+
+html, body {
+overflow-y:hidden;
+height:100%;}

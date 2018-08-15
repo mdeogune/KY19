@@ -1,0 +1,68 @@
+
+body { 
+    /* The image used */
+   
+
+    /* Full height */
+    
+    /* Center and scale the image nicely */
+   /* background-position: center;
+    background-repeat: no-re100%*/
+    background-color: black;
+    
+}
+
+.bg1
+{
+
+	 height: auto;
+	 display: block;
+}
+
+.bg2
+{
+	display: none;
+}
+
+.image1
+{
+	max-width: 100%;
+}
+
+
+@media(max-width: 768px)
+{
+
+body { 
+    /* The image used */
+   
+
+    /* Full height */
+    
+    /* Center and scale the image nicely */
+   /* background-position: center;
+    background-repeat: no-re100%*/
+    background-color: black;
+    
+}
+
+.bg2
+{
+
+	 height: auto;
+	 display: block;
+}
+
+.bg1
+{
+	display: none;
+}
+
+.image2
+{
+	max-width: 100%;
+}
+
+}
+	
+

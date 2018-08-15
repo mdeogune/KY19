@@ -1,0 +1,202 @@
+.mainContainer{
+
+
+padding:0;
+}
+.col-md-4{
+padding:0;
+margin:0;
+width:450px;
+height:450px;
+}
+#callToAction a:hover{
+    border: 1px solid #38c0ff;
+    color: #38c0ff;
+    background: white;
+}
+#callToAction a {
+    font-size: 22px;
+    color: white;
+    border: 1px solid white;
+    background: #38c0ff;
+    padding: 10px 40px;
+    letter-spacing: 0.2px;
+    transition: all 0.3s ease;
+	text-decoration: none;
+	cursor: pointer;
+}
+.teamMemberDescription{
+text-align: justify;
+font-size:18px;
+}
+.teamMemberBasicInfo a{
+padding-right:15px;
+}
+#callToAction {
+	padding: 60px 0 130px 0;
+    text-align: center;
+}
+#callToAction h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+#callToAction p span{
+    font-family: SourceSansPro-Regular;
+}
+#callToAction p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    font-family: SourceSansPro-Light;
+    line-height: 130%;
+    margin-bottom: 50px;
+}
+.teamMemberBasicInfo i{
+font-size: 30px !important;
+color: white !important;
+}
+
+.row.teamPageUL {
+    /*! margin: 5% 0; */
+    list-style: none;
+/*	background: black;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.teamPageHeading{
+    text-align: center;
+	padding-top: 80px;
+	height: 150px;
+	font-size: 35px;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	background-color: rgba(245,245,220,1);
+	color: #404040;
+	font-family: Poppins-SemiBold;	
+}
+.teamPageHeading span {
+    border-bottom: 2px solid #404040;;
+}
+.teamMemberBasicInfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 1s ease;
+    width: 70%;
+    text-align: center;
+}
+
+.teamMemberBasicInfo1, .teamMemberBasicInfo2, .teamMemberBasicInfo3, .teamMemberBasicInfo4, .teamMemberBasicInfo5, .teamMemberBasicInfo6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	height:33.33vw;
+	width:33.33vw;
+    transition: all 1s ease;
+	width:70%;
+}
+.teamMemberInfo1,  .teamMemberInfo2,  .teamMemberInfo3,  .teamMemberInfo4,  .teamMemberInfo5,  .teamMemberInfo6{
+	width:0%;
+	opacity:1;
+	height: 33.33vw !important;
+}
+.teamMemberName{
+	font-size: 40px;
+font-family: Poppins-Regular;
+text-align: center;
+}
+.teamMemberDesignation{
+	font-size: 25px;
+font-family: SourceSansPro-Light;
+text-align: center;
+    padding: 5px 0px 20px 0px;
+}
+.teamMemberSocialIcons {
+    text-align: center;
+    border-top: 2px solid white;
+    padding: 10px;
+}
+.teamMemberSocialIcons a{
+    padding: 15px;
+}
+.teamPage:hover .teamMemberBasicInfo{
+    opacity: 1;
+    color: white;
+    animation: animatetop 0.4s;
+}
+.teamPage:hover img{
+    opacity: 0.8;
+}
+.teamPage, .teamPage1{
+    position: relative;
+	width: 100%;
+}
+.teamPage1{
+	background: white;
+	margin-bottom: -6px !important;
+}
+
+.teamPage, .teamPage1{
+	float: left;
+	overflow: hidden;
+	padding: 0;
+
+}
+
+.teamMemberSocialIcons i {
+    font-size: 30px;
+    text-align: center;
+}
+.teamPage img, .teamPage1 img{
+	width: 450px;
+	padding:10px;
+}
+
+.active3{
+	width:0;
+	animation: animateright 0.4s;
+}
+
+.active4{
+	display: block;
+	width: 33.33%;
+	animation: animateleft 0.4s;
+}
+
+.active25{
+	width:0;
+	animation: animateleft1 0.4s;
+}
+
+.active36{
+	display: block;
+	width: 33.33%;
+	animation: animateright1 0.4s;
+}
+
+@keyframes animateleft{from{width:0vw;} to{width:33.33%;}}
+@keyframes animateright{from{width:33.33%;} to{width:0;}}
+@keyframes animateleft1{from{width:33.33%;} to{width:0;}}
+@keyframes animateright1{from{width:0;} to{width:33.33%;}}
+
+header
+{box-shadow: none !important;}
+/*@media (max-width: 768px) {
+.teamMemberBasicInfo{
+    opacity: 1;
+    color: white;
+    animation: animatetop 0.4s;
+}
+.teamPage, .teamPage1 {
+    float: left;
+    overflow: hidden;
+    padding: 0;
+    height: 100vw;
+}
+.teamPage img, .teamPage1 img {
+    height: 100%;
+}
+}*/

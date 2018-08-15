@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'kybase.html' %}
+    <title>Kashiyatra 2018 | Cultural Festival IIT (BHU) Varanasi India</title>
+    <link rel="stylesheet" href="../static/css/style_csoon.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url(../static/img/Website_image-min.jpg);background-repeat: no-repeat;background-size:cover;background-position:center;background-attachment:fixed;overflow-y:hidden;overflow-x: hidden;">
+<div class="top">
+    <div class="logo">
+        <img src="../static/img/ky%20logo-min.png">
+    </div>
+    <div class="iit">
+        <img src="../static/img/logo-min.png" class="head" style='height: 100%; width: 100%; object-fit: contain'>
+    </div>
+</div>
+<div class="header">
+    <img style='margin-right:10%;' src="../static/img/KY_Header_withouttheme1-min.png">
+</div>
+<div class="link">
+<div class="type-1">
+  <div>
+    <a href="/form" class="btn btn-1" style="text-transform:none;">
+      <span class="txt">Register / Login</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+</div>
+</div>
+<div class="time">
+<p id="demo" style="font-size:35px; text-align: center"></p>
+</div>
+<script>
+        var countDownDate = new Date("Jan 19, 2018 00:00:00").getTime();
+
+        var x = setInterval(function() {
+
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("demo").innerHTML = days + " <span class=\"yellow\">d</span>  " + hours + " <span class=\"yellow\">h</span>  "
+          + minutes + " <span class=\"yellow\">m</span>  " + seconds + " <span class=\"yellow\">s</span>";
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+    </script>
+</body>
+</html>

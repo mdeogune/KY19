@@ -1,0 +1,18 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="card" style="background-color:rgba(39,39,43,0.9)">
+            <div class="card-header" data-background-color="purple">
+                <h4 class="title">Notifications</h4>
+			</div>
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div *ngFor="let notice of notifications" class="alert alert-info alert-with-icon" data-notify="container">
+                            <p><a>{{notice.text}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

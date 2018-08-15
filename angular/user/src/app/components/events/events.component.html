@@ -1,0 +1,97 @@
+<div class="content">
+<div class="container-fluid">
+    <div id="accordion" class="accordion">
+
+            <div class="card-header collapsed" style="margin:3%" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" *ngIf="message">
+                
+                    <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;" class="alert alert-info">{{message}}</p>
+            </div>
+        <div class="card m-b-0" style="background-color:rgb(49, 49, 50)">
+            <div style="margin:3%"  >  
+              <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">REGISTER FOR EVENT</p>
+                
+            </div>
+            <div   style="margin:4%" class="controls ">
+        <form class="form-inline"  role="form" autocomplete="off"style="margin:3%" #eventForm="ngForm">
+
+          <div class="row">
+          <div class="col-sm-3">
+            
+            <div  class="form-group">
+              <label>SELECT CATEGORY</label> <br>
+              <select class="form-control" [(ngModel)]="team.parent_event" (change)="updateParent()" name= "related_to" required style="color:whitesmoke;background: rgb(72, 69, 66);width: 100%!important">
+                <option *ngFor="let rel of parent_events  " [value]="rel">{{rel}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            
+           <div class="form-group" >
+           <label>SELECT EVENT</label> <br>
+          <select class="form-control" [(ngModel)]="team.event" (change)="updateSub()" name= "related_to" required style="color:whitesmoke;background: rgb(72, 69, 66);width: 100%!important">
+                <option *ngFor="let rel of subevents"  [value]="rel.eventName">{{rel.eventName}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            
+
+            <div class="form-group">
+            <div *ngIf="!indReg">
+                    
+           <label>TOTAL TEAM MEMBERS </label> <br>
+            <select class="form-control" [(ngModel)]="team.team_size" (change)="updateMember()" name= "related_to" required style="color:whitesmoke;background: rgb(72, 69, 66);width: 100%">
+                <option *ngFor="let rel of number_of_members "  [value]="rel">{{rel}}</option>
+              </select>
+            </div>
+            </div>
+          </div>
+            </div>
+
+        <!--  {{diagnostic}} -->
+
+
+  <div>
+<div *ngIf="!message">
+    
+              <div *ngIf="indReg">
+                <button type="submit" class="btn btn-primary" (click)="individualRegister()" >Individual Register</button>
+              </div>
+  <div *ngIf="teamReg">
+      <div class="control-group col-xs-8" id="fields">
+          <div >
+            <div class=" input-group ">
+
+              <label class="control-label" for="">Team Leader</label>
+              <input class="form-control" name="leader" type="text" value="{{ky_id}}" readonly placeholder="Team Leader's KY Id" />
+              </div>
+              <br>
+              <div class=" input-group ">
+                  <label class="control-label" for="">Team Name</label>
+                    <input class="form-control" [(ngModel)]="team.name"  name="teamName" type="text" placeholder="Team Name" />
+              </div>
+               <br>
+               <label class="control-label"  for="field1">Team member details :</label>
+              <div *ngFor="let mem of members; let in=index" >
+                  <div class="input-group" >
+                      <input class="form-control" [(ngModel)]="members_kyid[in]" name="members[in]" required="true" type="text" placeholder="Member's KY Id (KY####)" />
+                  </div><br><br>
+              </div>
+              <button type="submit" class="btn btn-default" (click)="teamRegister($event);eventForm.reset();" [disabled]="!eventForm.form.valid" name="register">Register</button>
+      </div>
+  </div>
+</div>
+  </div>
+
+
+</div>
+
+</form>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+

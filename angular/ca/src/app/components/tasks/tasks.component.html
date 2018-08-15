@@ -1,0 +1,86 @@
+<div class="content">
+<div class="container-fluid">
+    <div id="accordion" class="accordion">
+        <div class="card m-b-0">
+            <div class="card-header collapsed" style="margin:3%" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <a class="card-title" >
+                    <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Click to see previous entries</p>
+                </a>
+            </div>
+            <div id="collapseOne" class="card-block collapse" style="margin:4%">
+            <table class="table table-inverse" style="background-color: whitesmoke">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Related To</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                  <th>Designation</th>
+                  <th>College</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let pr of PRData; let i = index">
+                  <th scope="row">{{i+1}}</th>
+                  <td>{{pr.related_to}}</td>
+                  <td>{{pr.name}}</td>
+                  <td>{{pr.email}}</td>
+                  <td>{{pr.contact}}</td>
+                  <td>{{pr.designation}}</td>
+                  <td>{{pr.college}}</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="card m-b-0" style="background-color:rgb(49, 49, 50)">
+            <div class="card-header collapsed" style="margin:3%" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <a class="card-title" >
+                    <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Click to add new entry</p>
+                </a>
+            </div>
+            <div id="collapseTwo" class="card-block collapse" style="margin:4%">
+        <form class="form-inline" style="margin:3%" #prForm="ngForm">
+
+          <div class="row">
+            <div class="form-group">
+              <label>Related To</label> <br>
+              <select class="form-control" [(ngModel)]="newPR.related_to" name= "related_to" required style="color:whitesmoke;background: rgb(72, 69, 66)">
+                <option *ngFor="let rel of relations"  [value]="rel">{{rel}}</option>
+              </select>
+            </div>
+            <div *ngIf="othersChoosen()" class="form-group">
+              <label for="exampleInputEmail3">Add Relation </label> <br>
+              <input type="text" class="form-control" [(ngModel)]="newRelation" name="newRelation" required="true">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail3">Name </label> <br>
+              <input type="text" class="form-control" [(ngModel)]="newPR.name" name="name" required="true">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail3">Contact</label> <br>
+              <input type="number" class="form-control" [(ngModel)]="newPR.contact" name="contact" required="true">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail3">Email</label> <br>
+              <input type="email" class="form-control" [(ngModel)]="newPR.email" name="email" required="true">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail3">Designation</label> <br>
+              <input type="text" class="form-control" [(ngModel)]="newPR.designation" name="designation" required="true">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail3">College</label> <br>
+              <input type="text" class="form-control" [(ngModel)]="newPR.college" name="college" required="true">
+            </div>
+              <button type="submit" class="btn btn-primary" (click)="addPR();prForm.reset();" [disabled]="!prForm.form.valid">{{button}}</button>
+          </div>
+        </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

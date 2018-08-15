@@ -1,0 +1,319 @@
+
+<!DOCTYPE html><head>
+	<title>Kashiyatra</title>
+	    {% include 'kybase.html' %}
+	<meta charset="utf-8" />
+	<meta name="description"		content="Kashiyatra, the annual cultural festival of IIT BHU Varanasi is a three day fiesta, aimed towards mesmerizing everyone with enchanting literary, musical and artistic events.">
+	<meta property="og:description"	content="Kashiyatra" />
+	<meta property="og:title"		content="Kashiyatra" />
+
+	<meta property="og:type"		content="website" />
+	<meta property="og:site_name"	content="Bytustka.cz" />
+	<meta name="viewport" 					content="width=1024">
+	<link href="/static/index/index.css?v=2017-06-13.1"		type="text/css" rel="Stylesheet"/>
+	<link href="/static/index/awwwards.css"				type="text/css" rel="Stylesheet"/>
+	<link rel="shortcut icon"		href="favicon.ico" type="image/x-icon">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Quicksand'>
+      <link rel="stylesheet" href="/static/index/css/style10.css">
+	 <link rel="stylesheet" href="/static/index/css/style2.css">
+	<script src="/static/index/jquery.min.js"				type="text/javascript"  ></script>
+	<script src="/static/index/jquery.easing.js"			type="text/javascript"  ></script>
+	<script src="/static/index/index.js?v=2017-06-13.1"		type="text/javascript"  ></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+	 <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      *{
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 80px;
+  height: 1900px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color:#e06d5c;
+}
+
+@supports (position: sticky) {
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    position: sticky;
+  }
+
+}
+
+.navbar {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.navbar .nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+.navbar .nav .item {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+}
+
+.navbar .nav .item .contact {
+  display: inline-block;
+  background-color: #ffffff;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+}
+
+.navbar .nav .item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 70px;
+  height: 70px;
+ /* background-color: firebrick;*/
+ background-image:url('/static/index/img/logo.jpg');
+  transition: 0.5s ease;
+}
+
+.navbar .logo img {
+  /*display: none;*/
+}
+
+.scrolled {
+ transition: 0.5s ease;
+}
+
+.scrolled.navbar {
+  height: 50px; 
+  background-color: rgba(0, 0, 0, 1);
+  transition: 0.5s ease;
+
+}
+
+
+.scrolled.navbar .nav .item {
+  line-height: 40px;
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar .nav .item .contact {
+  display: inline-block;
+  background-color: #ffffff;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 40px;
+  height: 40px;
+/*  background-color: firebrick;*/
+background-image:url('./img/logo.jpg');
+  transition: 0.5s ease;
+}
+#y:hover
+{
+background-color:#fff;
+border-radius:2px;
+}
+#o:hover{
+background-color:green;
+border-radius:2px;
+}
+    </style>
+	<script>debug = false;</script>
+</head><body class="not_ready en">
+
+       <div id="landscape_cover" class="hidden">
+		<div>&#8635;</div>
+		<p>Please view your device in landscape mode.</p>
+	</div>
+	
+	<div id="body_wrapper">
+	<header style="position:fixed;">
+      <div class="navbar scrolled">
+        <ul class="nav">
+          <li class="item">
+            <a href="#" class="contact" id="y">Home</a>
+          </li>
+
+          <li class="item">
+            <a href="/events/" id="y" style="padding:5px;">Events</a>
+          </li>
+          <li class="item" >
+            <a href="/form/" id="o" style="padding:5px;">REGISTER / LOGIN</a>
+          </li>
+        </ul>
+        <div class="logo" >
+          <img src="/static/index/img/kyl.png" style="height:45px;width:55px;">
+        </div>
+      </div>
+    </header>
+				<a id="scroll_helper" onclick="scroll_to(0.2,1000);"></a> 
+		<img id="bg_img" src="/static/index/img/zed2.jpg" alt="" />
+		<div id="preloader"><div class="progress"></div></div>
+		
+		<div id="zed">
+
+			<div id="zed_grafiti">
+				<a id="butt3" href="#" >
+					KALPESH BANSAL(Publicity)<br/>email:kalpesh@iitbhu.ac.in<br/>MOB:7233013288
+					<i></i>
+				</a>
+				<a id="butt2" href="#" >
+					YOGESH GUTTA(Marketing)<br/>email:yogesh@iitbhu.ac.in<br/>MOB:9628194988
+					<i></i>
+				</a>
+				<a id="butt1" href="#" >
+					PRAKHAR DHAWAN(Events)<br/>email:prakhar@iitbhu.ac.in<br/>MOB:7080486918
+
+					<i></i>
+				
+				</a>
+				 <a id="butt4" href="/form">
+					REGISTER NOW
+					<i></i>
+				</a>
+			</div>
+			<div id="zed_top"><div id="zed_kocka"></div></div>
+		</div>
+		
+		<div class="object" id="pradlo"></div>
+		<div class="object" id="pradlo_s"></div>
+		<div class="object" id="tuje"></div>
+		<div class="object" id="dum1"></div>
+		<div class="object" id="dum1_in"><div id="dum1_obrazek"></div><div id="dum1_stroj"></div><div id="dum1_tyran"></div></div>
+		<div class="object" id="dum1_in2"></div>
+		
+		<div class="object" id="panel1"><div class="text">
+			 <div class="center">
+  <h1 id="word">
+    <span class="letter">K</span>
+    <span class="letter">A</span>
+    <span class="letter">S</span>
+    <span class="letter">H</span>
+    <span class="letter">I</span>
+    <span class="letter">Y</span>
+    <span class="letter">A</span>
+    <span class="letter">T</span>
+    <span class="letter">R</span>
+    <span class="letter">A</span>
+    
+  </h1>
+  <div id="test"></div>
+</div>
+<iframe width="100%" height="345" src="https://www.youtube.com/embed/rsM_t1MytJ4" style="margin-top:70px;">
+</iframe>
+</div></div>
+		<div class="object" id="dum2"></div>
+		<div class="object" id="dum2_in"><div id="dum2_in_anim"></div></div>
+		<div class="object" id="panel2"><div class="text">
+
+		<p style="color:#6648c9; font-weight:bold; padding-top:20px;">"Lovely memories, every moment was magical. We had an awesome blast!"</p><p id="name">-SACHIN-JIGAR</p>
+		<p style="color:#6B0505; font-weight:bold;">"Most enthusiastic crowd I have ever sen. Simply rocking."</p><p id="name">-ANISH SOOD</p>
+		<p style="color:#6648c9; font-weight:bold;">"I will perform  here day in and day out."</p><p id="name">-NIKHIL D' SOUZA</p>
+		<p style="color:#6B0505; font-weight:bold;">"You gave us one of the best nights of our career."</p><p id="name" >-PALASH,EUPHORIA</p>
+		
+</div></div>
+		<div class="object" id="komin"><div id="cap"></div><div id="komin_bg"></div></div>
+		<div class="object" id="jerab"></div>
+		<div class="object" id="text3"><div class="text"><h2 id="poke">All the fun</h2>
+		<div id="row1">
+		<div ><div id="circle1" style="background-image:url('/static/index/img/mirage.jpg'); background-repeat:no-repeat;"></div><div id="info" ><p id="com">COMPETITIONS</p></div></div>
+			<div ><div id="circle2" style="background-image:url('/static/index/img/pro.jpg');  background-repeat:no-repeat;"></div><div id="info"><p id="pro">PRONITES</p></div></div>
+		</div><div id="row2">
+			<div ><div id="circle3" style="background-image:url('/static/index/img/work1.jpg'); background-repeat:no-repeat;"></div><div id="info"><p id="wor">WORKSHOPS</p></div></div>
+			<div ><div id="circle4" style="background-image:url('/static/index/img/int.jpg');  background-repeat:no-repeat;"></div><div id="info"><p id="intl">INT'L CARNIVAL</p></div></div>
+		</div><div id="row3">
+			<div ><div id="circle5" style="background-image:url('/static/index/img/infor.jpeg');  background-repeat:no-repeat;"></div><div id="info "><p id="inform">INFORMALS</p></div></div>
+			<div ><div id="circle6" style="background-image:url('/static/index/img/soc.jpg');  background-repeat:no-repeat;" ></div><div id="info"><p id="soc">SOCIAL CAMPAIGNS</p></div></div>
+		</div>
+</div></div>
+		<div class="object" id="mrak1"></div>
+		<div class="object" id="balon"><div id="balon_praporek"></div><div id="balon_pilot"></div></div>
+		<div class="object" id="text4"><div class="text"><h2>About US</h2>
+<p>Kashiyatra, the annual cultural festival of IIT BHU Varanasi is a three day fiesta, aimed towards mesmerizing everyone with enchanting literary, musical and artistic events. Its grandeur has earned it the fame of being north India's largest cultural festival. IIT BHU rests amidst the sanctity of Asia's biggest residential university, BHU in the holy city of Varanasi. Varanasi, the eternal city, houses a plethora of traditions and has an ecstatic blend of cultures of myriad races. IIT&nbsp;Bhu has been nationally acclaimed for imparting technical knowledge in diverse fields and IIT BHU will be celebrating its cetenary in a couple of years. </p>
+
+
+</div>
+</div>
+		<div class="object" id="mrak2"></div>
+		<div class="object" id="mrak3"></div>
+		<div class="object" id="princ"><div id="princ_sala"></div></div>
+		<div class="object" id="claim" ></div>
+		<div class="object" id="bublina_T"><div><div>
+			
+		</div></div></div>
+		<div class="object" id="bublina_L"><div></div></div>
+		<div class="object" id="bublina_R"><div></div></div>
+		<div class="object" id="socials">
+			
+			<a class="socials facebook" href="https://www.facebook.com/kashiyatra.IITBHU/"	target="_blank"></a>
+		</div>
+		<div class="object" id="pozadi"><div class="object"></div></div>
+	</div>
+	<div class="hidden" id="bytustka"><div>
+		<div class="bublina" id="bytustka_link_muj_pribeh"   data-href="pribeh"><span></span></div>
+		<div class="bublina" id="bytustka_link_zpet" ><span></span></div>
+		<!--<span class="bublina">
+			
+		</span>-->
+		
+		<div id="bytustka_telo"></div>
+	</div></div>
+<br />
+		<div class="stroj_back"></div>
+		<div class="stroj"></div>
+	</div></div></div>
+
+	</div></div>
+	<div id="null"></div>
+	<div id="mobile_cover"></div>
+	
+<script>
+	jQuery(document).ready(function($){
+        $("html, body").animate({ scrollTop: 0 }, 2000);
+    });
+</script>
+<script  src="/static/index/js/index1.js"></script>
+</body></html>

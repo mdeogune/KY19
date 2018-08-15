@@ -1,0 +1,19 @@
+body{
+	overflow-y: hidden;
+}
+
+.content{
+	margin-top:10%;
+}
+input{
+	color: whitesmoke!important;
+}
+@media (max-width:600px)  { 
+.content{
+	margin-top:25%!important;
+	}
+.notice{
+	color:whitesmoke!important;
+}
+
+}

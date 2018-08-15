@@ -1,0 +1,140 @@
+.footer{
+	position: absolute;
+	padding:0 !important;
+}
+footer{
+	position: absolute;
+	width: 100%;
+}
+.footerOptions{
+	background-color: #0d0d0d;
+	border-bottom: 2px solid #c2c2c2;
+}
+
+.footerOptions a{
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+.footerOptions a:hover, .footerOptions a:focus {
+    color: #38c0ff;
+}
+
+.footerAboutUs, .footerCauses, .footerLearn, .footerFundraise, .footerContactShare{
+	padding: 4% 0px 4% 2.7%;
+}
+
+ .footerContactShare{
+	     float: right;
+	padding-left: 5%;
+}
+.footerContactShare{
+	border-left: 2px solid #c2c2c2;
+}
+
+.footerAboutUs ul, .footerCauses ul, .footerLearn ul, .footerFundraise ul, .footerContactShare ul{
+	list-style-type: none;
+	line-height: 120%;
+	letter-spacing: 1px;
+}
+
+.footerContactShare i {
+    font-size: 30px;
+    color: white;
+    line-height: 212%;
+	letter-spacing: 15px;
+}
+.footerH2heading {
+    font-size: 15px !important;
+    padding-bottom: 8px;
+}
+
+.footerContactShare i.fa-facebook:hover{
+	color: rgb(59,89,152);
+}
+.footerContactShare i.fa-google-plus:hover{
+	color: rgb(211,72,54);
+}
+.footerContactShare i.fa-instagram:hover{
+	color: rgb(76,104,215);
+}
+.footerContactShare i.fa-twitter:hover{
+	color: rgb(0,172,237);
+}
+.footerContactShare i.fa-youtube:hover{
+	color: rgb(187,0,0);
+}
+.footerContactShare i.fa-whatsapp:hover{
+	color: rgb(77,194,71);
+}
+.footerContactShare i.fa-linkedin:hover{
+	color: rgb(0,119,181);
+}
+
+.footerBottom{
+	background-color: #0a0a0a !important;
+	padding: 15px 30px 15px 30px;
+}
+
+footer h2{
+	font-size: 15px;
+	color: white;
+	margin: 3px 0 3px 0;
+	line-height: 115%;
+}
+
+footer h1{
+	font-size: 20px;
+	font-family: Poppins-Regular;
+	color: white;
+	margin-bottom: 5px;
+}
+
+footer img{
+	height: 40px;
+}
+.noleftmargin{
+margin-left:0 !important;
+}
+
+@media (max-width: 768px) {
+.noleftmargin{
+margin-left:0 !important;
+}
+.footerAboutUs, .footerCauses, .footerLearn, .footerFundraise, .footerContactShare{
+    width: 100%;
+    text-align: center;
+}
+
+.footerH2heading {
+    font-size: 14px !important;
+    margin-top: 2% !important;
+}
+.footerH1heading {
+    font-size: 18px !important;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+}
+.footerBottom{
+
+	align-items: center;
+	text-align:center;
+	padding:0;
+	padding-top:10% !important;
+	padding-bottom:10% !important;
+}
+.footer{
+padding:0 !important;
+}
+.mobileDisable{
+display:none;
+}
+
+.footerContactShare {
+    border-left: 0px solid black;
+}
+
+}

@@ -1,0 +1,23 @@
+
+{% load i18n %}
+  {% include 'kybase.html' %}
+
+ <link href="/static/ca-dashboard/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+	
+
+{% block content %}
+<h1>{% trans "Social Network Login Failure" %}</h1>
+
+<h2>Try logging in again</h2>
+<p>{% trans "An error occurred while attempting to login via your social network account." %}</p>
+<a class="btn btn-info" href="/account/facebook/login/">Login again</a>
+{% endblock %}
+
+
+
+ <p>If you are still facing problem while registering/logging in to Kashiyatra Campus Ambassador Portal   <br>  Drop us an email: <a href="mailto:kashiyatra@iitbhu.ac.in">kashiyatra@iitbhu.ac.in</a> with screenshot of this page</p>
+
+Code: {{ auth_error.code }}, Error: {{ auth_error.exception }}
+
+</div>

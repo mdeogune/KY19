@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'kybase.html' %}
+  <title>Complete Profile</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/animate.css">
+  <link rel="stylesheet" href="/static/css/ca-form.css">
+</head>
+<style>
+
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.ui-helper-hidden-accessible{
+  display: none;
+
+}
+.ui-menu-item-wrapper{
+
+  background: #f7f7f7;
+  width: 30%;
+}
+ul {
+  list-style-type: none;
+}
+
+</style>
+<body>
+  <div class="container">
+      <div class="row">
+        <hr />
+          <h2>Complete Your Profile</h2>
+
+          <div class="row">
+              <div class="col-sm-5">
+                  <br>
+                  <form action="" role="form" method="POST" id="ca-form">
+                    {% csrf_token %}
+                      <div class="form-group float-label-control">
+                          <label for="">Events</label>
+                          <input type="text" class="form-control" name="event">
+                      </div>
+
+                      <div class="form-group float-label-control">
+                          <label for="">Members</label>
+                          <input type="text" class="form-control" name="member" >
+                      </div>
+     
+                      <button class="btn btn-submit"type="submit">Done</button>
+                  </form>
+
+
+              </div>
+              <div class="col-sm-4 col-sm-offset-3">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h3 class="panel-title">
+                              Important!
+                          </h3>
+                      </div>
+                      <div class="panel-body">
+                          <ul>
+                              <li>Make sure your all your information is correct.</li>
+
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</body>
+<script src="/static/js/jquery-1.11.3.min.js"></script>
+<script src="/static/js/bootstrap-3.3.5.min.js"></script>
+<script src="/static/js/jquery.validate-1.14.0.min.js"></script>
+<script src="/static/js/jquery-validate.bootstrap-tooltip.js"></script>
+<script src="/static/js/ca-form.js" charset="utf-8"></script>
+<script type="text/javascript">
+      var idx=window.location.toString().indexOf("#_=_");
+       if (idx>0) {
+         window.location = window.location.toString().substring(0, idx);
+       }
+
+
+
+// Wait for the DOM to be ready
+$(document).ready(function() {
+
+  $("#ca-form").validate({
+
+    rules: {
+
+     postal_address: "required",
+
+      whatsapp_number:{
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+      }, 
+      pincode: {
+        required: true,
+        minlength: 6,
+        maxlength: 6,
+      },
+      reason:{
+        required: true,
+      },
+    },
+
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+
+});
+</script>
+<!-- <script src="/static/js/1.12.0jquery-ui.min.js"></script> -->
+
+<script>
+
+       //     $( function() {
+       //   var availableTags = [
+       //     {% for clg in all_colleges %}
+       //         "{{clg}}",
+       //     {% endfor %}
+       //   ];
+       //   $("#id_college").autocomplete({
+       //     source: availableTags
+       //   });
+       // } );
+       // // over write the default autocomplete function to match the option starting with term
+       // $.ui.autocomplete.filter = function (array, term) {
+       //   var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+       //   return $.grep(array, function (value) {
+       //     return matcher.test(value.label || value.value || value);
+       //   });
+       // };
+</script>
+</html>

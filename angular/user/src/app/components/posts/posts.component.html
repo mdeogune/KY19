@@ -1,0 +1,109 @@
+          <div class= "card top-card" style="margin:0%;width:90%;margin-top:10%;margin-left:4%" *ngIf="is_paid">
+               <div class="" style="margin:3%" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  <a class="card-title" >
+                      <p style="color:black;margin:auto;font-size:20px;cursor:pointer;margin-bottom: -2%">Click to check your payment status.<br><br></p>
+                  </a>
+                </div>
+                <div id="collapseTwo" class="card-block collapse" style="margin:4%">
+                  Payment Status: Successful <br><br>
+                  Payment Reference Id: {{payment_id}}<br><br>
+                  Amount Paid: Rs. {{paid_amt}}
+                <br> 
+            </div>
+          </div> 
+            <div class= "card top-card" style="margin:4%;width:90%;margin-top:10%" *ngIf="!is_paid">
+               <div class="" style="margin:3%" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  <a class="card-title" >
+                      <p style="color:black;margin:auto;font-size:20px;cursor:pointer;">Click to pay registration fee.</p>
+                  </a>
+                </div> 
+            <div id="collapseTwo" class="card-block collapse" style="margin:4%">
+              For <b>payment and on-spot registration bookings</b> please contact the Publicity Executives of Kashiyatra. <br>
+              Following are the details of the executives: <br> <br>
+              <b>Kalpesh Bansal: +91-7233013288 <br>
+              Email ID: kalpesh.bansal.eee15@iitbhu.ac.in <br> <br>
+              Sai Sumanth: +91-9493690659 <br>
+              Email ID: nsai.sumanth.eee15@iitbhu.ac.in <br></b>
+            </div>  
+          </div>  
+<div class="alert alert-success" style="display: none;">
+  <a class="close" >&times;</a>
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+ <div class= "card m-b-0" *ngIf="!if_canceled" style="margin:4%;width:90%">
+            <div class="card-header collapsed" style="margin:3%" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <a class="card-title" >
+                    <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Click to see your registrations</p>
+                </a>
+            </div>
+            <div id="collapseOne" class="card-block collapse" style="margin:4%">
+            <table class="table table-inverse" style="background-color: whitesmoke">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Team ID</th>
+                  <th>Event</th>
+                  <th>Team name</th>
+                  <th>Members</th>
+               
+                  <th>Cancel</th>
+              
+             
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let pr of previous_reg; let i = index">
+                  <th scope="row">{{i+1}}</th>
+                  <td>{{pr.teamId}}</td>
+                  <td>{{eventName(pr.event)}}</td>
+                  <td>{{pr.teamName}}</td>
+                  <td>
+                  <div *ngFor="let member of pr.members">
+                    {{member.ky_id}}
+                  </div>
+                  </td>
+                  <div *ngIf="pr.teamLeader['ky_id']==ky_id">
+              <!--     instead of 3 ky_id -->
+                  <td>
+                     <button type="submit" class="btn btn-default" (click)="cancelRegister(pr.teamId)"    name="cancel">Delete team</button>
+                  </td>
+                  </div>
+
+                   <div *ngIf="!pr.teamLeader['ky_id']==ky_id">
+              <!--     instead of 3 ky_id -->
+                  <td>
+                     Only Teamleader can delete it!
+                  </td>
+                  </div>
+         
+                </tr>
+              </tbody>
+            </table>
+            </div>
+
+
+
+
+        </div>
+<div class="card m-b-0" *ngIf="if_canceled">
+  <div class="card-header collapsed" style="margin:3%" data-toggle="collapse">
+                
+                    <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Are you sure?</p>
+               
+            </div>
+  <div  style="margin:4%">
+  <table class="table table-inverse" style="background-color: whitesmoke">
+              <thead>
+                <tr>
+                  <th><button type="submit" class="btn btn-default" (click)="yesButton()"    name="cancel">yes</button></th>
+                  <th><button type="submit" class="btn btn-default" (click)="cancelButton()"    name="cancel">cancel</button></th>
+         
+             
+                </tr>
+              </thead>
+              </table>
+              </div>
+
+
+ </div>

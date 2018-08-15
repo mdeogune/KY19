@@ -1,0 +1,39 @@
+$(document).ready(function() {
+    var userid = Smooch.getUserId();
+    if (userid == null){
+        userid = "";
+    }
+    $.ajax({
+        url: '/ajax/check_userid/',
+        data: {
+            'userid': userid
+        },
+        dataType: 'json',
+        success: function (data) {
+            if (data.is_available) {
+                Smooch.init({
+                    appToken: data.app_token,
+                    jwt: data.token,
+                    userId: data.userid,
+                    customText: {
+                        headerText: 'How can we help?',
+                        inputPlaceholder: 'Type a message...',
+                        sendButtonText: 'Send'
+                    }
+                });
+            }
+            else {
+                Smooch.init({
+                    appToken: data.app_token,
+                    customText: {
+                        headerText: 'How can we help?',
+                        inputPlaceholder: 'Type a message...',
+                        sendButtonText: 'Send',
+                    }
+                });
+
+            }
+        }
+
+    });
+});

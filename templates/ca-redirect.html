@@ -1,0 +1,29 @@
+<html>
+<head>
+  {% include 'kybase.html' %}
+	
+</head>
+    <link href="/static/ca-dashboard/css/bootstrap.min.css" rel="stylesheet" />
+<body>
+
+<div class="container">
+<div class="row">
+    <h3>Error Occured</h3>
+ <ul> 
+<li><p>An error occured while logging you in via facebook, please make sure your email id is linked to your Facebook account. </p></li>
+<li><p>If your email id is already linked to Facebook, then make sure you have confirmed your email id on Facebook.</p></li>
+<li>
+<p>Refer this post for more info: <a href="https://www.facebook.com/help/376335499080938/">https://www.facebook.com/help/376335499080938/</a></p>
+</li>
+ </ul>   
+ <p>    
+ Follow Above instructions and Retry 
+<a class="btn btn-info" href="https://www.facebook.com/v2.10/dialog/oauth?client_id=421719991556493&redirect_uri=http://{{ request.get_host }}/account/login&auth_type=rerequest&scope=email">Login again</a>
+ </p>
+
+ <h3>If you are still facing problem while registering on Kashiyatra Campus Ambassador Portal   <br>  Drop us an email: <a href="mailto:kashiyatra@iitbhu.ac.in">kashiyatra@iitbhu.ac.in</a></h3>
+</div>
+</div>
+</body>
+</html>
+
