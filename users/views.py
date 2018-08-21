@@ -186,11 +186,13 @@ def EmailRegistration(request): # registration with email
                                                         referralCode=referralCode)
                     kyprofile.set_password(password)
                     kyprofile.save()
+                    kyprofile.is_active=True ## temporary
                     # IncreaseRegs(referralCode) #write a script for this
                     addKYProfileToSheet(kyprofile)
-                    send_reg_email(kyprofile,  get_current_site(request))                        
-                    return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
-
+                    # just for now
+                    # send_reg_email(kyprofile,  get_current_site(request))                        
+                    # return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
+                    return redirect('/dashboard')
                 else:
                     return HttpResponse("Invalid form submission")#sth to be done
 
@@ -218,8 +220,9 @@ def FormView(request):
                     kyprofile = KYProfile.objects.get(email=email)
                 except:
                     return HttpResponse('No user found')
-                if not kyprofile.is_active:
-                    return HttpResponse('Please confirm your account before loging in. Check your inbox for confirmation link.')
+                # deactivated temporary
+                # if not kyprofile.is_active:
+                #     return HttpResponse('Please confirm your account before loging in. Check your inbox for confirmation link.')
                 
                 kyprofile=authenticate(email=email,password=password)
                 if kyprofile:
@@ -237,6 +240,7 @@ def FormView(request):
 
 @login_required(login_url=LOGIN_URL)
 def DashboardView(request):
+    print("dash board")
     kyprofile = request.user
     print(kyprofile.profile_completed, kyprofile.has_ca_profile)
     if kyprofile.profile_completed:
