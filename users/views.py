@@ -185,8 +185,9 @@ def EmailRegistration(request): # registration with email
                                                         profile_completed=True,
                                                         referralCode=referralCode)
                     kyprofile.set_password(password)
+                    kyprofile.is_active=True 
                     kyprofile.save()
-                    kyprofile.is_active=True ## temporary
+                    ## temporary
                     # IncreaseRegs(referralCode) #write a script for this
                     addKYProfileToSheet(kyprofile)
                     # just for now
