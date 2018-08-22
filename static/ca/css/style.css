@@ -154,7 +154,7 @@ a :focus {
   margin: auto;
   -webkit-box-shadow: 0 -2px 25px 0 rgba(0, 0, 0, 0.15), 0 13px 25px 0 rgba(0, 0, 0, 0.3);
   border-radius: 2px;
-  padding: 30px;
+  padding: 15px;
   overflow: auto;
 }
 
@@ -177,7 +177,7 @@ a :focus {
   font-size: 15px;
   color: #757575;
   hyphens: auto;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   font-family: 'Fjalla One', sans-serif;
 }
 
@@ -218,7 +218,7 @@ a :focus {
 
 .login-modal .group { 
 	position: relative; 
-	margin-bottom: 45px; 
+	margin-bottom: 25px; 
 }
 
 .login-modal input {
@@ -239,7 +239,7 @@ a :focus {
 }
 
 .login-modal form {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 /* Label */
 
@@ -359,7 +359,7 @@ a :focus {
 	border: solid white 2px;
 	width: 200px;
 	margin: auto;
-	padding: 15px;
+	padding: 10px;
 	font-size: 23px;
 	margin-top: 20px;
 }
