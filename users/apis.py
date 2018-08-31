@@ -9,9 +9,13 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.template.loader import render_to_string
+from sendgrid import Email
+
 from .tokens import account_activation_token
 from django.template import Context
-
+import sendgrid
+from sendgrid.helpers.mail import *
+from kashiyatra.settings import SENDGRID_API_KEY
 
 def addCaToSheet(kyprofile,ca):
 
@@ -31,7 +35,7 @@ def addCaToSheet(kyprofile,ca):
             'reason': ca.reason,
     }
 
-    url = 'https://script.google.com/macros/s/AKfycbwd3siEIr23TLoafEoG3z43TfYRh9BAc-JzmOlXmkVkvAyBHzE4/exec'
+    url = 'https://script.google.com/macros/s/AKfycbyHvLFjPXiH83ztmRn-KY5TzHoOMqeUbvZWiYfnD3b-P1sc0maT/exec'
 
     response = requests.post(url, data=data)
 
@@ -52,7 +56,7 @@ def addKYProfileToSheet(kyprofile):
             'profile_link': kyprofile.profile_link,
     }
 
-    url = 'https://script.google.com/macros/s/AKfycby49G4fB7BNNXjvvLw-aPpUp3pefj5zY_LZcnYtdwyKtRJ7gbw/exec'
+    url = 'https://script.google.com/macros/s/AKfycbxQkuN8V98XguClO3gyVSqj_oUu3GqFKJ5JL9qi02dj_4hL30_t/exec'
 
     return requests.post(url, data=data)
 
@@ -61,7 +65,7 @@ def send_email(subject, body, email):
     mail = EmailMultiAlternatives(
       subject = subject,
       body = body,
-      from_email = "Kashiyatra Indian Institute of Technology BHU Varanasi<kashiyatra@iitbhu.ac.in>", #can't use commas 
+      from_email = "Kashiyatra Indian Institute of Technology BHU Varanasi<kashiyatra@iitbhu.ac.in>", #can't use commas
       to = [email],
       reply_to = ["kashiyatra@iitbhu.ac.in"],
       # headers={"Reply-To": "kashiyatra@iitbhu.ac.in"}, #gives errors with reply to in headers
@@ -85,29 +89,29 @@ def regSuccessMail(kyprofile):
 
 def send_reg_email(kyprofile, current_site):
     d = {
-        'user':kyprofile, 
-        'domain':current_site.domain,
+        'user': kyprofile,
+        'domain': current_site.domain,
         'uid': urlsafe_base64_encode(force_bytes(kyprofile.pk)),
         'token': account_activation_token.make_token(kyprofile),
     }
-    
+
     text_content = render_to_string('acc_active_email1.txt', d)
     html_content = render_to_string('acc_active_email.html', d)
-     
 
-   
+
+
     email = kyprofile.email
     subject = 'Kashiyatra Account confirmation'
-    send_email_smtp1(subject, text_content, email,html_content)
+    send_email_smtp1(subject, text_content, email, html_content)
 
 def send_reset_pass(kyprofile, current_site):
     d = {
-        'user':kyprofile, 
+        'user':kyprofile,
         'domain':current_site.domain,
         'uid': urlsafe_base64_encode(force_bytes(kyprofile.pk)),
         'token': account_activation_token.make_token(kyprofile),
     }
-    
+
     text_content = render_to_string('acc_reset.txt',d)
     html_content     = render_to_string('acc_reset.html',d)
 
@@ -116,12 +120,12 @@ def send_reset_pass(kyprofile, current_site):
     send_email_smtp1(subject, text_content, email,html_content)
 
 def send_email1(subject, body, email, html_content):
-    
-    
+
+
     mail = EmailMultiAlternatives(
       subject = subject,
       body = body,
-      from_email = "Kashiyatra Indian Institute of Technology BHU Varanasi<kashiyatra@iitbhu.ac.in>", #can't use commas 
+      from_email = "Kashiyatra Indian Institute of Technology BHU Varanasi<kashiyatra@iitbhu.ac.in>", #can't use commas
       to = [email],
       reply_to = ["kashiyatra@iitbhu.ac.in"],
       # headers={"Reply-To": "kashiyatra@iitbhu.ac.in"}, #gives errors with reply to in headers
@@ -154,9 +158,10 @@ def send_email_smtp(subject, body, email):
     mailserver.quit()
 
 def send_email_smtp1(subject, body, email, html_content):
-    me = "Kashiyatra'18"
+    me = "Kashiyatra'19"
+    mee=Email(me, "Kashiyatra'19")
     you = email
-
+    your=Email(email)
     # Create message container - the correct MIME type is multipart/alternative.
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
@@ -183,9 +188,17 @@ def send_email_smtp1(subject, body, email, html_content):
     mailserver.starttls()
     # re-identify ourselves as an encrypted connection
     mailserver.ehlo()
-    mailserver.login('kashiyatra@itbhu.ac.in', 'biggerandbetter18')
+    mailserver.login('kashiyatra19@gmail.com', 'kashiyatra2k19')
 
     # sendmail function takes 3 arguments: sender's address, recipient's address
     # and message to send - here it is sent as one string.
     mailserver.sendmail(me, you, msg.as_string())
     mailserver.quit()
+    #content=Content("text/html", msg.as_string())
+    #sg = sendgrid.SendGridAPIClient(apikey=SENDGRID_API_KEY)
+    #from_email = Email("tyagivaibhav2505@gmail.com")
+    #mail = Mail(from_email, 's', your, content)
+    #response = sg.client.mail.send.post(request_body=mail.get())
+    #print(response.status_code)
+    #print(response.body)
+    #print(response.headers)

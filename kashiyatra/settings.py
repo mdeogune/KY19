@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.google',
+
 ]
 
 MIDDLEWARE = [
@@ -155,7 +156,7 @@ ACCOUNT_EMAIL_VERIFICATION=False
 ACCOUNT_USER_USERNAME_FIELD = None
 
 
-SENDGRID_API_KEY ='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'
+SENDGRID_API_KEY ='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'
 EMAIL_BACKEND = "sgbackend.SendGridBackend"
 
 ACCOUNT_FORMS = {
