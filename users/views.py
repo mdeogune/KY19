@@ -158,6 +158,7 @@ def IncreaseRegs(ref):
         print(ref, e)
 
 def EmailRegistration(request): # registration with email
+
     template_name='email_reg.html'
     if not request.user.is_authenticated():
         if request.method == 'POST':
@@ -185,15 +186,15 @@ def EmailRegistration(request): # registration with email
                                                         profile_completed=True,
                                                         referralCode=referralCode)
                     kyprofile.set_password(password)
-                    kyprofile.is_active=True 
-                    kyprofile.save()
+                    #kyprofile.is_active=True
+                    #kyprofile.save()
                     ## temporary
                     # IncreaseRegs(referralCode) #write a script for this
                     addKYProfileToSheet(kyprofile)
                     # just for now
-                    # send_reg_email(kyprofile,  get_current_site(request))                        
-                    # return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
-                    return redirect('/dashboard')
+                    send_reg_email(kyprofile,  get_current_site(request))
+                    return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
+                    #return redirect('/dashboard')
                 else:
                     return HttpResponse("Invalid form submission")#sth to be done
 
