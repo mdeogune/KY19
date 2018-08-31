@@ -21,7 +21,7 @@ DEBUG = True
 USE_TZ = True
 APPEND_SLASH  = True
 
-# Application definition
+# Application definition    
 
 INSTALLED_APPS = [
     'rest_framework',
@@ -247,7 +247,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-SITE_ID=1
+SITE_ID=2
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
