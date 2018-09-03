@@ -41,7 +41,7 @@ def _getNotifications(kyprofile):
     return context
 
 def IndexView(request):
-    template_name = 'mainpage.html'
+    template_name = 'homepage.html'
     return render(request, template_name, {})
 
 def eventRegister(request):
