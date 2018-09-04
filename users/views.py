@@ -159,13 +159,14 @@ def IncreaseRegs(ref):
 
 def EmailRegistration(request): # registration with email
 
-    template_name='email_reg.html'
+    template_name='homepage.html'
     if not request.user.is_authenticated():
         if request.method == 'POST':
             post = request.POST
             email = post.get('email', None)
             name = post.get('name', None)
-            password = post.get('pass1', None)
+            password = post.get('pass2', None)
+            print (password)
             referralCode = post.get('ref', None)
             gender = post.get('gender', None)
             collegeName = post.get('college', None)
@@ -187,7 +188,7 @@ def EmailRegistration(request): # registration with email
                                                         referralCode=referralCode)
                     kyprofile.set_password(password)
                     #kyprofile.is_active=True
-                    #kyprofile.save()
+                    kyprofile.save()
                     ## temporary
                     # IncreaseRegs(referralCode) #write a script for this
                     addKYProfileToSheet(kyprofile)
@@ -210,7 +211,7 @@ def EmailRegistration(request): # registration with email
             return HttpResponse('Please confirm your email address to complete the registration')
 
 def FormView(request):
-    template_name='loginmain.html'
+    template_name='homepage.html'
     if not request.user.is_authenticated():
         if request.method == 'POST':
             post = request.POST
@@ -228,11 +229,11 @@ def FormView(request):
                 
                 kyprofile=authenticate(email=email,password=password)
                 if kyprofile:
-                	kyprofile.backend='django.contrib.auth.backends.ModelBackend'
-                	login(request,kyprofile)
-                	return redirect('/dashboard')
+                    kyprofile.backend='django.contrib.auth.backends.ModelBackend'
+                    login(request,kyprofile)
+                    return redirect('/dashboard')
                 else:
-                	return HttpResponse('Either you have entered a wrong password or you need to try the option from which you have registered previously. (Facebook or Google)')
+                    return HttpResponse('Either you have entered a wrong password or you need try forgot password')
             else:
                 return HttpResponse("Invalid form submission")#sth to be done
         else:
