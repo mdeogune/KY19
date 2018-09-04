@@ -247,7 +247,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-SITE_ID=2
+SITE_ID=1
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
