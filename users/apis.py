@@ -188,7 +188,7 @@ def send_email_smtp1(subject, body, email, html_content):
     mailserver.starttls()
     # re-identify ourselves as an encrypted connection
     mailserver.ehlo()
-    mailserver.login('kashiyatra19@gmail.com', 'kashiyatra2k19')
+    mailserver.login('kashiyatra@itbhu.ac.in', 'waitforbiggestky19')
 
     # sendmail function takes 3 arguments: sender's address, recipient's address
     # and message to send - here it is sent as one string.

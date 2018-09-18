@@ -21,10 +21,10 @@
    <!--login-->
    <div id="sticky-note">
       <img src="css/sticky.png"></img>
-	  <a href="form/" style="top: 5%;" ><h2>Login</h2></a>
-	  <a href="form/" style="top: 35%;" ><h2>Register</h2></a>
-	   <!-- <a href="#" style="top: 5%;" id="login"><h2>Login</h2></a>
-	<a href="#" style="top: 35%;" id="register"><h2>Register</h2></a>  -->
+	 <!--  <a href="form/" style="top: 5%;" ><h2>Login</h2></a>
+	  <a href="form/" style="top: 35%;" ><h2>Register</h2></a> -->
+	   <a href="#" style="top: 5%;" id="login"><h2>Login</h2></a>
+	<a href="#" style="top: 35%;" id="register"><h2>Register</h2></a> 
    </div>
     
 	
@@ -198,15 +198,15 @@
 		  
 		  
 		  <!--login-->
-		  <form action="" role="form" method="POST" id="ca-form">
-                    {% csrf_token %}
+		  
 		  <div class="login-modal-overlay" id="login-modal-overlay">
   
              <div class="login-modal">
                  <h1>Sign In</h1>
                  <h2>Please enter your credentials</h2>
-				 <a class="close" href="#"><h2>X<h2><a>
-                 <form>
+				 <a class="close" ><h2>X<h2><a>
+                <form action="form/" role="form" method="POST">
+  {% csrf_token %}
                      <div class="group">
 				     <h3>Email</h3>
                      <input id="email" name="email" type="text" required></span><span class="bar"></span>
@@ -217,10 +217,13 @@
                  </div>
                      <button type="submit" class="button buttonBlue" type="submit" >Login</button>
                  </form>
+                 <br>
+                 
+                 <a href="/forgotPass"><button  class="button buttonBlue"  >Forgot Password</button></a>
              </div>
 
            </div>
-           </from>
+         
 		  
 		  		  <!--alert-->
 		  <div class="login-modal-overlay" id="alert">
@@ -239,36 +242,53 @@
              <h1>Sign Up</h1>
              <h2>Please enter your credentials</h2>
 			 <a class="close" href="#"><h2>X<h2><a>
-             <form>
+             <form action="email_reg/" role="form" method="POST" id="ca-form" >
+                    {% csrf_token %}
                  <div class="group">
 				     <h3>Name:</h3>
-                     <input type="text"required></span><span class="bar"></span>
+                     <input type="text" id="name" name="name" required="true" placeholder="Name" required></span><span class="bar"></span>
                  </div>
                  <div class="group">
 				     <h3>College Name:</h3>
-                     <input type="text"required></span><span class="bar"></span>
+                     <input type="text" name="college" class="form-control" required="true" placeholder="College" required></span><span class="bar"></span>
                  </div>
 				 <div class="group">
 				     <h3>Email:</h3>
-                     <input type="email"required></span><span class="bar"></span>
+                     <input type="email" id="email" name="email" required="true" placeholder="Email" required></span><span class="bar"></span>
                  </div>
-				 <div class="group">
-				     <h3>Address for communication:</h3>
-                     <input type="text"required></span><span class="bar"></span>
-                 </div>
+                 <div class="group">
+                          <label for="">Gender</label>
+                          <select class="year" id="gender" name="gender" placeholder="gender" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                            
+                          </select>
+                      </div>
+                   <div class="group">
+                          <label for="">Choose Year</label>
+                          <select class="year" id="id_year" name="year" placeholder="Year" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
+                            <option value="1">First</option>
+                            <option value="2">Second</option>
+                            <option value="3">Third</option>
+                            <option value="4">Fourth</option>
+                            <option value="5">Fifth</option>
+                          </select>
+                      </div>
+				 
 				 <div class="group">
 				     <h3>Phone Number:</h3>
-                     <input type="number"required min="1000000000" max="9999999999"></span><span class="bar"></span>
+                     <input type="number" name="mobile_number"  placeholder="Mobile Number" required ></span><span class="bar"></span>
                  </div>
                  <div class="group">
 				     <h3>Password:</h3>
-                     <input type="password" required></span><span class="bar"></span>
+                     <input type="password" required name="pass11" id="pass11"  placeholder="Password"></span><span class="bar"></span>
                  </div>
                  <div class="group">
 				     <h3>Confirm Password:</h3>
-                     <input type="password" required></span><span class="bar"></span>
+                     <input type="password"  name="pass2" id="pass2"  placeholder="Confirm Password" required></span><span class="bar"></span>
                  </div>
-                 <button type="submit" class="button buttonBlue">Sign Up</button>
+                 <button type="submit" class="button buttonBlue" id="submit-button" onclick="return Validate()" type="submit" >Sign Up</button>
              </form>
          </div>
 
@@ -278,4 +298,77 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script  src="js/index.js"></script>
 </body>
+<script src="/static/js/ca-form.js" charset="utf-8"></script>
+<script src="/static/js/bootstrap-3.3.5.min.js"></script>
+<script src="/static/js/jquery.validate-1.14.0.min.js"></script>
+<script src="/static/js/jquery-validate.bootstrap-tooltip.js"></script>
+<script type="text/javascript">
+      var idx=window.location.toString().indexOf("#_=_");
+       if (idx>0) {
+         window.location = window.location.toString().substring(0, idx);
+       }
+
+       function Validate(){
+
+        var pass1= document.getElementById("pass11").value;
+        var pass2= document.getElementById("pass2").value;
+        if (pass1!=pass2){
+          alert("Password do no match.")
+          return false;
+        }
+        return true;
+
+
+       }
+
+
+
+// Wait for the DOM to be ready
+$(document).ready(function() {
+
+  $("#ca-form").validate({
+
+    rules: {
+
+      college: "required",
+      mobile_number: {
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+      },
+        pass1: "required",
+        pass2: "required",
+      pass1: {
+        required: true,
+        minlength: 6,
+       
+      },
+       pass2: {
+        required: true,
+        minlength: 6,
+       
+      },
+      whatsapp_number:{
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+      }, 
+      pincode: {
+        required: true,
+        minlength: 6,
+        maxlength: 6,
+      },
+      reason:{
+        required: true,
+      },
+    },
+
+    submitHandler: function(form) {
+      form.submit();
+          $('#submit-button').prop('disabled', true);
+    }
+  });
+
+});
+</script>
 <html>
