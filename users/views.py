@@ -322,7 +322,9 @@ def reset_(request, uidb64, token):
     # else:
     # return HttpResponse('Activation link is invalid!')
 
-
+def error_404(request):
+    data = {}
+    return render(request, 'error404.html', data)
 
 @csrf_exempt
 def forgotPassword(request):
@@ -366,3 +368,4 @@ def forgotPassword(request):
         return render(request,'forgotpass.html', {})
     # else:
     #     raise Http404('NOT ALLOWED')
+
