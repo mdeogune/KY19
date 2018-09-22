@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5fc89bc-e00b-46e4-9782-185986dfd1aa" name="Default Changelist" comment="" />
+    <list default="true" id="f5fc89bc-e00b-46e4-9782-185986dfd1aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/css/error404.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/css/error404.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/ca/src/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular/ca/src/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/ca/src/assets/js/chartist.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/angular/ca/src/assets/js/chartist.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/user/src/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular/user/src/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/user/src/assets/js/chartist.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/angular/user/src/assets/js/chartist.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kashiyatra/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kashiyatra/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kashiyatra/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kashiyatra/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/about us.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/ca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/contact us.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/diary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/glasses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/insta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/kyl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/laptop2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/man.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/note.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/paper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/paperball.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/paperclip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/pen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/perks.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/responsibilities.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/sticky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/tnc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/wall5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/why ca.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/css/youtube.png" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/youtube.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyca1/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/angular/ca/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/angular/ca/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/angular/ca/assets/js/chartist.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/angular/ca/assets/js/chartist.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/angular/ca/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/angular/ca/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/angular/ca/inline.db12c5e3e02cd609377b.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/angular/ca/main.ac46612d11dc06997ad3.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/homepage2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,57 +61,73 @@
     <session id="-2135133490">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.50" value="2" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.87" value="1" />
+          <entry key="project.open.time.92" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="py" value="6" />
+          <entry key="css" value="2" />
+          <entry key="html" value="18" />
+          <entry key="jpg" value="2" />
+          <entry key="md" value="4" />
+          <entry key="png" value="2" />
+          <entry key="py" value="16" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="Python" value="6" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="18" />
+          <entry key="Image" value="4" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="425" />
+          <entry key="html" value="543" />
+          <entry key="md" value="1" />
+          <entry key="py" value="577" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="425" />
+          <entry key="HTML" value="543" />
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="577" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users/apis.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="195" column="21" lean-forward="true" selection-start-line="195" selection-start-column="21" selection-end-line="195" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1535697573984" expanded="true" signature="6547:6548" ph="..." />
-              </folding>
+            <state relative-caret-position="3900">
+              <caret line="293" column="13" selection-start-line="293" selection-start-column="13" selection-end-line="293" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kashiyatra/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="210">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -71,12 +136,51 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kashiyatra/urls.py">
+        <entry file="file://$PROJECT_DIR$/angular/user/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1095">
+              <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/ca/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-375">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/error404.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/error404.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/css/error404.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/user-dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2310">
+              <caret line="154" column="60" selection-start-line="154" selection-start-column="60" selection-end-line="154" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -94,34 +198,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/views.py">
+        <entry file="file://$PROJECT_DIR$/kashiyatra/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="189" selection-start-line="189" selection-end-line="190" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>userf</find>
+      <find>css</find>
+      <find>dashboard</find>
+      <find>Dashboard</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/templates/css</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,9 +232,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kashiyatra/settings.py" />
         <option value="$PROJECT_DIR$/users/apis.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/templates/homepage1.html" />
+        <option value="$PROJECT_DIR$/templates/homepage2.html" />
+        <option value="$PROJECT_DIR$/users/templates/error404.html" />
+        <option value="$PROJECT_DIR$/kashiyatra/urls.py" />
         <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/templates/user-dashboard.html" />
+        <option value="$PROJECT_DIR$/angular/user/src/index.html" />
+        <option value="$PROJECT_DIR$/templates/homepage.html" />
+        <option value="$PROJECT_DIR$/angular/ca/src/index.html" />
+        <option value="$PROJECT_DIR$/static/css/error404.css" />
+        <option value="$PROJECT_DIR$/templates/error404.html" />
+        <option value="$PROJECT_DIR$/kashiyatra/settings.py" />
       </list>
     </option>
   </component>
@@ -140,6 +254,10 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/angular/ca/node_modules" />
+    <handled-path value="$PROJECT_DIR$/angular/user/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -158,6 +276,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,14 +284,65 @@
               <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
               <item name="KY19" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="ca" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="ca" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="kashiyatra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -180,6 +350,14 @@
   </component>
   <component name="PyFindUsagesOptions">
     <option name="isSearchForTextOccurrences" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,7 +412,7 @@
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26177174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3104549" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -264,29 +442,104 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
+        <state relative-caret-position="-771">
           <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kashiyatra/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/kybase.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/email_reg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="2895">
+          <caret line="193" column="5" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/eventRegister.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/apis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/CAIndex.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ca-form.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/acc_active_email1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/acc_active_email.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forgotpass.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/homepage2.html" />
+    <entry file="file://$PROJECT_DIR$/templates/homepage1.html" />
+    <entry file="file://$PROJECT_DIR$/static/500755_black-design-wallpaper-hd.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Asset 19.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/DSC_0566.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ca-redirect.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="254" column="9" selection-start-line="254" selection-start-column="9" selection-end-line="254" selection-end-column="9" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kashiyatra/urls.py">
+    <entry file="file://$PROJECT_DIR$/angular/user/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1095">
+          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user-dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="154" column="60" selection-start-line="154" selection-start-column="60" selection-end-line="154" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -300,32 +553,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/models.py">
+    <entry file="file://$PROJECT_DIR$/kashiyatra/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
+    <entry file="file://$PROJECT_DIR$/static/css/error404.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="189" selection-start-line="189" selection-end-line="190" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3900">
+          <caret line="293" column="13" selection-start-line="293" selection-start-column="13" selection-end-line="293" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/apis.py">
+    <entry file="file://$PROJECT_DIR$/angular/ca/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="195" column="21" lean-forward="true" selection-start-line="195" selection-start-column="21" selection-end-line="195" selection-end-column="21" />
+        <state relative-caret-position="-375">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/error404.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/css/error404.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/error404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kashiyatra/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1535697573984" expanded="true" signature="6547:6548" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

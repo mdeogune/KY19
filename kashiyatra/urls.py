@@ -7,7 +7,8 @@ from django.contrib.auth.views import logout
 from django.conf.urls.static import static
 from django.contrib.staticfiles.views import serve
 from django.views.generic import RedirectView
-
+from django.conf.urls import  handler404
+from users import views as users_views
 from .settings import STATICFILES_DIRS
 
 def lafda(request, shit):
@@ -31,4 +32,7 @@ urlpatterns = [
     url(r'^(?!/?static/)(?!/?media/)(?P<path>.*\..*)$',
         RedirectView.as_view(url='/static/%(path)s', permanent=False)),
 ]
+handler404 = users_views.error_404
+
+
 
