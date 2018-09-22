@@ -699,9 +699,11 @@ margin-right: 1px;
 }
 @media screen and (orientation: portrait) {
 	#alert {
-	display: block;
-}
-#alert .login-modal {
-	height: 30%;
-}
-}
+		display: block;
+	}
+
+	#alert .login-modal {
+		height: 30%;
+	}
+
+}}
