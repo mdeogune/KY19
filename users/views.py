@@ -194,8 +194,9 @@ def EmailRegistration(request): # registration with email
                     addKYProfileToSheet(kyprofile)
                     # just for now
                     send_reg_email(kyprofile,  get_current_site(request))
-                    return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
+                    #return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
                     #return redirect('/dashboard')
+                    return render(request, "email_confirmation.html")
                 else:
                     return HttpResponse("Invalid form submission")#sth to be done
 
@@ -222,7 +223,8 @@ def FormView(request):
                 try:    
                     kyprofile = KYProfile.objects.get(email=email)
                 except:
-                    return HttpResponse('No user found')
+                    #return HttpResponse('No user found')
+                    return render(request,"user_not_found.html")
                 # deactivated temporary
                 # if not kyprofile.is_active:
                 #     return HttpResponse('Please confirm your account before loging in. Check your inbox for confirmation link.')
