@@ -3,9 +3,153 @@
   <component name="ChangeListManager">
     <list default="true" id="f5fc89bc-e00b-46e4-9782-185986dfd1aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/anuj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/arjun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/arun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/ashutosh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/deepesh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/hemanth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/kalpesh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/kalyan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/manda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/mayank.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/nikhil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/nitish.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/peeyush.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/prachet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/prakarsh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/prakhar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/pranu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/rajat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/rishabh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/ronith.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/sagar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/sagar_jain.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/sanpreet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/sanprit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/shravani.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/shubham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/suman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/sumit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/yogesh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Our Team_files/zeeshan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/ATKT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/AvinashGowariker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/BURN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/BflatLogo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Bisleri.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Creativelandasia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Dainikbhaskar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Deezeno1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Doritos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Droom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/FashionLady.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/HRCLOGO_Mumbai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/ITC_SRA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Imagica.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/JIFF-Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Krazybee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/LCARE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Lifesense.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/MFC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/MJ5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/MRF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Manforce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Mirchi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Mysoul.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/NCPA-Logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/NIVEA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Nescafe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/PPP-Final.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/PhoenixMarketcity-Bengaluru-Logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TC_Logo-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TIME.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TLI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TOI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TTT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TalentChariot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TheHansIndia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Tiago.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Toabh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/VanityCask.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Zomato.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/cc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/colors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/colorsinfinity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/eAudition.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/jankidevi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/logounit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/mtv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/mtvbeats.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/natgeo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/oneplus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/pearl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/pokerbaazi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/shareit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/si1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/the_habitat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/westendmall-aundh-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/schedule/appwebsite.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/schedule/schedule-a3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0081.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0087.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0093.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/ambi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/angee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/at.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/atkt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/atlas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/baba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/bingo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/camlin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/career.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/celio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/cft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/chet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/cifa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/dp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/ease.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/edu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/embassy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/fast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/fru.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/funk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/iffco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/indian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/ixi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/kar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/laava.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/lava.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/made.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/maruti.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/max.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/natural.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/ocean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/ola.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/ox.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/peta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/quint.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/rrr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/sat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/silk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/sonata.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/sparx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/spy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/tasty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/te.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/telr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/toppr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/trends.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/vision.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/zeb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sponsors/img/logo png/znet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/apis.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/apis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,44 +157,53 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/KY19$a.coverage" NAME="a Coverage Results" MODIFIED="1538209179542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/users" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2135133490">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="2" />
           <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="4" />
-          <entry key="html" value="23" />
-          <entry key="jpg" value="2" />
+          <entry key="165640567304176" value="1" />
+          <entry key="JPG" value="1" />
+          <entry key="css" value="9" />
+          <entry key="download" value="3" />
+          <entry key="html" value="25" />
+          <entry key="jpeg" value="2" />
+          <entry key="jpg" value="60" />
           <entry key="js" value="2" />
           <entry key="md" value="4" />
-          <entry key="png" value="2" />
-          <entry key="py" value="22" />
+          <entry key="png" value="43" />
+          <entry key="py" value="38" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="23" />
-          <entry key="Image" value="4" />
+          <entry key="CSS" value="8" />
+          <entry key="HTML" value="25" />
+          <entry key="Image" value="106" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="22" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,7 +211,7 @@
           <entry key="css" value="4" />
           <entry key="html" value="813" />
           <entry key="md" value="1" />
-          <entry key="py" value="619" />
+          <entry key="py" value="680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -66,7 +219,7 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="813" />
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="619" />
+          <entry key="Python" value="680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -74,104 +227,43 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kashiyatra/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="226" column="62" selection-start-line="226" selection-start-column="62" selection-end-line="226" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12398">
-              <caret line="107" column="19" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/forgotpass.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-              <folding>
-                <element signature="n#style#0;n#b#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/email_confirmation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/user_not_found.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="65" column="66" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/homepage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2445">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/style-sponsors.css">
+        <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/agency.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+        <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/agency.js.download">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/Asset 19.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/users/apis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3831">
-              <caret line="708" column="2" selection-start-line="708" selection-start-column="2" selection-end-line="708" selection-end-column="2" />
+            <state relative-caret-position="2940">
+              <caret line="196" selection-start-line="196" selection-end-line="196" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/DSC_0566.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4050" />
           </provider>
         </entry>
       </file>
@@ -190,6 +282,7 @@
       <find>css</find>
       <find>dashboard</find>
       <find>Dashboard</find>
+      <find>@</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/templates/css</dir>
@@ -201,7 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/users/apis.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/homepage1.html" />
         <option value="$PROJECT_DIR$/templates/homepage2.html" />
@@ -218,6 +310,8 @@
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/templates/user_not_found.html" />
+        <option value="$PROJECT_DIR$/users/a.py" />
+        <option value="$PROJECT_DIR$/users/apis.py" />
       </list>
     </option>
   </component>
@@ -248,6 +342,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,42 +353,31 @@
             <path>
               <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
               <item name="KY19" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KY19" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ca" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KY19" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ca" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KY19" type="462c0819:PsiDirectoryNode" />
-              <item name="kashiyatra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KY19" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
               <item name="KY19" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="Our Team_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
               <item name="KY19" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="PROJECTS _ Super Crowds inc._files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="schedule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KY19" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Sponsors _ Mood Indigo 2017_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
@@ -304,18 +388,11 @@
               <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
               <item name="KY19" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KY19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KY19" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,11 +406,11 @@
     <option name="isSearchForTextOccurrences" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -348,7 +425,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.a">
+    <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KY19" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/users" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/users/a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="KY19" type="Python.DjangoServer" factoryName="Django server">
       <module name="KY19" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -372,6 +471,15 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django server.KY19" />
+      <item itemvalue="Python.a" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.a" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -388,14 +496,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3216281" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33280128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,7 +511,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32952693" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32626426" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -420,48 +527,146 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/users/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-771">
-          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/kybase.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/email_reg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2895">
-          <caret line="193" column="5" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/eventRegister.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/CAIndex.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ca-form.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/acc_active_email1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/acc_active_email.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/homepage2.html" />
-    <entry file="file://$PROJECT_DIR$/templates/homepage1.html" />
-    <entry file="file://$PROJECT_DIR$/static/500755_black-design-wallpaper-hd.jpg">
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/anuj.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/arjun.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/arun.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/ashutosh.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/analytics.js.download">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/deepesh.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/manda.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/download.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/sanprit.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Our Team_files/sanpreet.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/KY Pics/BAndish/thePhotographyClubIITBHU-6704.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/KY Pics/BAndish/thePhotographyClubIITBHU-6702.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/KY Pics/BAndish/thePhotographyClubIITBHU-77.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/PROJECTS _ Super Crowds inc._files/abhinay.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/PROJECTS _ Super Crowds inc._files/abhinay.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/PROJECTS _ Super Crowds inc._files/bandish.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/PROJECTS _ Super Crowds inc._files/bandish.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/PROJECTS _ Super Crowds inc._files/css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/schedule/schedule-a3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/schedule/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/schedule/appwebsite.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sponsors/img/logo png/ambi.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sponsors/img/logo png/angee.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0101.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0093.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0066.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sponsors/img/logo png/znet.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sponsors/img/logo png/IMG-20180118-WA0087.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/PROJECTS _ Super Crowds inc._files/darewho.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/a.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/agency.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/ATKT.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/AvinashGowariker.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/BflatLogo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Bisleri.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/natgeo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Zomato.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/westendmall-aundh-logo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/VanityCask.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TTT.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/TOI.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/BURN.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/colors.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Creativelandasia.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Dainikbhaskar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/Nescafe.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017_files/agency.js.download">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/Asset 19.png">
       <provider selected="true" editor-type-id="images" />
@@ -469,162 +674,18 @@
     <entry file="file://$PROJECT_DIR$/static/DSC_0566.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ca-redirect.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/error404.png" />
-    <entry file="file://$PROJECT_DIR$/static/css/error404.css">
+    <entry file="file://$PROJECT_DIR$/static/Sponsors _ Mood Indigo 2017.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/error404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/user/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/ca/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/error404.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user-dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="154" column="60" selection-start-line="154" selection-start-column="60" selection-end-line="154" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kashiyatra/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/angular/ca/inline.e0ba1d9e9f98a86ee72c.bundle.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/angular/ca/main.35e4a03e6fa715031108.bundle.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/contrib/messages/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
-        </state>
+        <state relative-caret-position="-4050" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users/apis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kashiyatra/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/email_confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="2940">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="226" column="62" selection-start-line="226" selection-start-column="62" selection-end-line="226" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12398">
-          <caret line="107" column="19" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forgotpass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#b#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2445">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3831">
-          <caret line="708" column="2" selection-start-line="708" selection-start-column="2" selection-end-line="708" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style-sponsors.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_not_found.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="65" column="66" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
         </state>
       </provider>
     </entry>
