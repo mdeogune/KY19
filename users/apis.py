@@ -194,11 +194,3 @@ def send_email_smtp1(subject, body, email, html_content):
     # and message to send - here it is sent as one string.
     mailserver.sendmail(me, you, msg.as_string())
     mailserver.quit()
-    #content=Content("text/html", msg.as_string())
-    #sg = sendgrid.SendGridAPIClient(apikey=SENDGRID_API_KEY)
-    #from_email = Email("tyagivaibhav2505@gmail.com")
-    #mail = Mail(from_email, 's', your, content)
-    #response = sg.client.mail.send.post(request_body=mail.get())
-    #print(response.status_code)
-    #print(response.body)
-    #print(response.headers)
