@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" >
 
+{%  load socialaccount %}
+
 <head>
 <!--   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
@@ -45,9 +47,9 @@
   
   <div class="social">
 
-    <a href="/account/facebook/login/" class="facebook"></a>
+    <!-- <a href="/account/facebook/login/" class="facebook">Facebook</a>-->
    <!-- <a href="javascript:void(0)" class="twitter"></a>-->
-    <a href="/account/google/login/" class="googleplus"></a>
+    <a href="{% provider_login_url 'google' %}" class="googleplus">Google</a>
 
   </div>
 </div>
