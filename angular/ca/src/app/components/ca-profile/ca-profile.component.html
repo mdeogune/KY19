@@ -1,10 +1,11 @@
-<div class="content" >
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<div class="content" style="font-family:'Montserrat', sans-serif" >
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8">
                 <div class="card" style="background-color:rgba(39,39,43,0.9)">
-                    <div class="card-header" data-background-color="green">
-                        <h4 class="title">Edit Profile</h4>
+                    <div class="card-header" style="background-color: #34133c">
+                        <h4 class="title" style="font-family:'Montserrat', sans-serif">Edit Profile</h4>
 						<p class="category">Complete your profile</p>
                     </div>
                     <div class="card-content">
@@ -76,7 +77,7 @@
 									</div>
                                 </div>
 							</div>
-                            <button type="submit" class="btn btn-primary pull-right" data-background-color="green" [disabled]="!userform.form.valid" (click)="updateuser($event)" >{{button}}</button>
+                            <button type="submit" class="btn btn-primary pull-right" style="background-color: #34133c" [disabled]="!userform.form.valid" (click)="updateuser($event)" >{{button}}</button>
                         </form>
                     </div>
                 </div>
