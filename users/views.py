@@ -149,9 +149,9 @@ def CaFormView(request):#ca-form
         }
         return render(request, template_name, context)
 
-def IncreaseRegs(ref):
+def IncreaseRegs(referralCode):
     try:
-        ca = CAProfile.objects.get(ca_id=ref)
+        ca = CAProfile.objects.get(ca_id=referralCode)
         ca.reg_num +=1
         ca.save()
     except Exception as e:
@@ -167,7 +167,7 @@ def EmailRegistration(request): # registration with email
             name = post.get('name', None)
             password = post.get('pass2', None)
             print (password)
-            referralCode = post.get('ref', None)
+            referralCode = post.get('referralCode', None)
             gender = post.get('gender', None)
             collegeName = post.get('college', None)
             year = post.get('year', None)
@@ -190,7 +190,7 @@ def EmailRegistration(request): # registration with email
                     #kyprofile.is_active=True
                     kyprofile.save()
                     ## temporary
-                    # IncreaseRegs(referralCode) #write a script for this
+                    IncreaseRegs(referralCode) #write a script for this
                     addKYProfileToSheet(kyprofile)
                     # just for now
                     send_reg_email(kyprofile,  get_current_site(request))
@@ -235,7 +235,7 @@ def FormView(request):
                     login(request,kyprofile)
                     return redirect('/dashboard')
                 else:
-                    return HttpResponse('Either you have entered a wrong password or you need try forgot password')
+                    return render(request, "wrong_pass.html")
             else:
                 return HttpResponse("Invalid form submission")#sth to be done
         else:
