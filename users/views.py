@@ -213,6 +213,7 @@ def EmailRegistration(request): # registration with email
 
 def FormView(request):
     template_name='homepage.html'
+    print (request.user.is_authenticated())
     if not request.user.is_authenticated():
         if request.method == 'POST':
             post = request.POST
@@ -239,7 +240,7 @@ def FormView(request):
             else:
                 return HttpResponse("Invalid form submission")#sth to be done
         else:
-            return render(request, template_name)
+            return redirect('/dashboard')
     else:
         return redirect('/dashboard')
 
