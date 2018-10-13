@@ -138,7 +138,7 @@ AUTH_USER_MODEL = 'users.KYProfile'
 
 # XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
 #LOGIN_URL = '/form'
-LOGIN_URL= '/form'
+LOGIN_URL= '/'
 LOGIN_URL_email= '/email_reg/'
 LOGIN_URL_social= '/accounts/'
 
@@ -248,7 +248,10 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 SITE_ID=1
+if os.environ.get('production', '') == 'True':
+    SITE_ID=2
 
+    DEBUG = False
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
