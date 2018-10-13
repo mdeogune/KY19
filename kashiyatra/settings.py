@@ -15,8 +15,8 @@ SECRET_KEY = "yqmjpc%wx0-=4ov&td)5i!$1cbx(7m)b7tcb5^g^n40=&2#sak"
 
 DEBUG = True
 #for heroku
-# if os.environ.get('production', '') == 'True':
-#     DEBUG = False
+if os.environ.get('production', '') == 'True':
+    DEBUG = False
 
 USE_TZ = True
 APPEND_SLASH  = True
