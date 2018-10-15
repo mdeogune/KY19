@@ -223,9 +223,7 @@
 
                         <!-- <a href="/account/facebook/login/" class="facebook">Facebook</a>-->
                         <!-- <a href="javascript:void(0)" class="twitter"></a>-->
-                        <button class="loginBtn loginBtn--google" >
-                            <a href="{% provider_login_url 'google' %}" class="googleplus">Google</a>
-                        </button>
+                       
                  </div>
 
 
@@ -252,15 +250,15 @@
              <form action="email_reg/" role="form" method="POST" id="ca-form" >
                     {% csrf_token %}
                  <div class="group">
-				     <h3>Name:</h3>
+				     <h4>Name:</h4>
                      <input id="name" name="name" type="text"required></span><span class="bar"></span>
                  </div>
                  <div class="group">
-				     <h3>College Name:</h3>
+				     <h4>College Name:</h4>
                      <input name="college" type="text" required></span><span class="bar"></span>
                  </div>
 				 <div class="group">
-				     <h3>Email:</h3>
+				     <h4>Email:</h4>
                      <input id="email" name="email" type="email" required></span><span class="bar"></span>
                  </div>
 				 <!--<div class="group">
@@ -287,18 +285,22 @@
                           </select>
                       </div>
 				 <div class="group">
-				     <h3>Phone Number:</h3>
+				     <h4>Phone Number:</h4>
                      <input type="number" name="mobile_number" required min="1000000000" max="9999999999"></span><span class="bar"></span>
                  </div>
                  <div class="group">
-				     <h3>Password:</h3>
+				     <label for="pass11"> <h4>Password:</h4></label>
                      <input type="password" required name="pass11" id="pass11" ></span><span class="bar"></span>
                  </div>
                  <div class="group">
-				     <h3>Confirm Password:</h3>
+				     <label for="pass2"><h4>Confirm Password:</h4></label>
                      <input type="password" required name="pass2" id="pass2" ></span><span class="bar"></span>
                  </div>
-                 <button type="submit" class="button buttonBlue" id="submit-button" onclick="return Validate()" type="submit" >Sign Up</button>
+                 <div class="group">
+                     <h3>Referral Code (Optional)</h3>
+                     <input type="text" name="referralCode" >
+                 </div>
+                 <button type="submit" class="button buttonBlue" id="submit-button" onclick="return Validate()"  >Sign Up</button>
              </form>
          </div>
 

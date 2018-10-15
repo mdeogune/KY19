@@ -138,7 +138,7 @@ AUTH_USER_MODEL = 'users.KYProfile'
 
 # XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
 #LOGIN_URL = '/form'
-LOGIN_URL= '/form'
+LOGIN_URL= '/'
 LOGIN_URL_email= '/email_reg/'
 LOGIN_URL_social= '/accounts/'
 
