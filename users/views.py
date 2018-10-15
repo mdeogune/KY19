@@ -160,56 +160,57 @@ def IncreaseRegs(referralCode):
 def EmailRegistration(request): # registration with email
 
     template_name='homepage.html'
-    if not request.user.is_authenticated():
-        if request.method == 'POST':
-            post = request.POST
-            email = post.get('email', None)
-            name = post.get('name', None)
-            password = post.get('pass2', None)
-            print (password)
-            referralCode = post.get('referralCode', None)
-            gender = post.get('gender', None)
-            collegeName = post.get('college', None)
-            year = post.get('year', None)
-            mobile_number = post.get('mobile_number', None)
-            check_email=KYProfile.objects.filter(email=email)
-            if not len(check_email):
-                if collegeName and  mobile_number and year and name and password and email:
-                    college, created = College.objects.get_or_create(
-                                                    collegeName=collegeName)                                                
-                    kyprofile = KYProfile.objects.create(email=email,
-                                                        full_name=name,
-                                                        gender=gender,
-                                                        mobile_number=mobile_number,
-                                                        college=college,
-                                                        year=year,
-                                                        is_active=False,
-                                                        profile_completed=True,
-                                                        referralCode=referralCode)
-                    kyprofile.set_password(password)
-                    #kyprofile.is_active=True
-                    kyprofile.save()
-                    ## temporary
+    # if not request.user.is_authenticated():
+    if request.method == 'POST':
+        post = request.POST
+        email = post.get('email', None)
+        name = post.get('name', None)
+        password = post.get('pass2', None)
+        print (password)
+        referralCode = post.get('referralCode', None)
+        gender = post.get('gender', None)
+        collegeName = post.get('college', None)
+        year = post.get('year', None)
+        mobile_number = post.get('mobile_number', None)
+        check_email=KYProfile.objects.filter(email=email)
+        if not len(check_email):
+            if collegeName and  mobile_number and year and name and password and email:
+                college, created = College.objects.get_or_create(
+                                                collegeName=collegeName)                                                
+                kyprofile = KYProfile.objects.create(email=email,
+                                                    full_name=name,
+                                                    gender=gender,
+                                                    mobile_number=mobile_number,
+                                                    college=college,
+                                                    year=year,
+                                                    is_active=False,
+                                                    profile_completed=True,
+                                                    referralCode=referralCode)
+                kyprofile.set_password(password)
+                #kyprofile.is_active=True
+                kyprofile.save()
+                ## temporary
+                if referralCode:
                     IncreaseRegs(referralCode) #write a script for this
-                    addKYProfileToSheet(kyprofile)
-                    # just for now
-                    send_reg_email(kyprofile,  get_current_site(request))
-                    #return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
-                    #return redirect('/dashboard')
-                    return render(request, "email_confirmation.html")
-                else:
-                    return HttpResponse("Invalid form submission")#sth to be done
-
+                addKYProfileToSheet(kyprofile)
+                # just for now
+                send_reg_email(kyprofile,  get_current_site(request))
+                #return HttpResponse('Confirmation link has been sent to your email id, Please confirm your email address to complete the registration.')
+                #return redirect('/dashboard')
+                return render(request, "email_confirmation.html")
             else:
-                return HttpResponse("email already  in use!!!!!")#sth to be done
+                return HttpResponse("Invalid form submission")#sth to be done
 
         else:
-            return render(request, template_name)
-    else :
-        if request.user.is_active :
-            return redirect('/dashboard')
-        else:
-            return HttpResponse('Please confirm your email address to complete the registration')
+            return HttpResponse("email already  in use!!!!!")#sth to be done
+
+    else:
+        return render(request, template_name)
+    # else :
+    #     if request.user.is_active :
+    #         return redirect('/dashboard')
+    #     else:
+    #         return HttpResponse('Please confirm your email address to complete the registration')
 
 def FormView(request):
     template_name='homepage.html'
