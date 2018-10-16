@@ -13,7 +13,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = "yqmjpc%wx0-=4ov&td)5i!$1cbx(7m)b7tcb5^g^n40=&2#sak"
 
 
-DEBUG = True
+DEBUG = False
 #for heroku
 # if os.environ.get('production', '') == 'True':
 #     DEBUG = False

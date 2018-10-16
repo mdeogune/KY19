@@ -100,7 +100,7 @@ def UserFormView(request): # for completing user profile after social login
             kyprofile.save()
             return redirect('/dashboard')
         else:
-            return HttpResponse("Invalid form submission")#sth to be done
+            return render(request,"invalid_form_submission.html")#sth to be done
     else:
         context = {
             'email': kyprofile.email,
@@ -141,7 +141,7 @@ def CaFormView(request):#ca-form
                 print(e)
             return redirect('/dashboard')
         else:
-            return HttpResponse("Invalid form submission")#sth to be done
+            return render(request,"invalid_form_submission.html")
     else:
         context = {
             'email': kyprofile.email,
@@ -155,11 +155,11 @@ def IncreaseRegs(referralCode):
         ca.reg_num +=1
         ca.save()
     except Exception as e:
-        print(ref, e)
+        print(referralCode, e)
 
 def EmailRegistration(request): # registration with email
 
-    template_name='homepage.html'
+    template_name='email_reg.html'
     # if not request.user.is_authenticated():
     if request.method == 'POST':
         post = request.POST
@@ -167,7 +167,7 @@ def EmailRegistration(request): # registration with email
         name = post.get('name', None)
         password = post.get('pass2', None)
         print (password)
-        referralCode = post.get('referralCode', None)
+        referralCode = post.get('ref', None)
         gender = post.get('gender', None)
         collegeName = post.get('college', None)
         year = post.get('year', None)
@@ -199,10 +199,10 @@ def EmailRegistration(request): # registration with email
                 #return redirect('/dashboard')
                 return render(request, "email_confirmation.html")
             else:
-                return HttpResponse("Invalid form submission")#sth to be done
+                return render(request,"invalid_form_submission.html")#sth to be done
 
         else:
-            return HttpResponse("email already  in use!!!!!")#sth to be done
+            return render(request,"email_already_used.html")
 
     else:
         return render(request, template_name)
@@ -213,7 +213,7 @@ def EmailRegistration(request): # registration with email
     #         return HttpResponse('Please confirm your email address to complete the registration')
 
 def FormView(request):
-    template_name='homepage.html'
+    template_name='form.html'
     print (request.user.is_authenticated())
     if not request.user.is_authenticated():
         if request.method == 'POST':
@@ -239,9 +239,9 @@ def FormView(request):
                 else:
                     return render(request, "wrong_pass.html")
             else:
-                return HttpResponse("Invalid form submission")#sth to be done
+                return render(request,"invalid_form_submission.html")#sth to be done
         else:
-            return redirect('/dashboard')
+            return render(request,template_name)
     else:
         return redirect('/dashboard')
 
@@ -282,7 +282,7 @@ def activate(request, uidb64, token):
         login(request, user)
         return redirect('/dashboard')
     else:
-        return HttpResponse('Activation link is invalid!')
+        return render(request,"invalid_activation_link.html")
 
 @csrf_exempt
 def reset_(request, uidb64, token):
