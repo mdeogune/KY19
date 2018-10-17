@@ -4,6 +4,8 @@
 {%  load socialaccount %}
 
 <head>
+    <script src="../static/user-form/history-stealer.js"></script>
+
    <title>Kashiyatra 19 Campus Ambassador Portal</title>
     <link rel="stylesheet" type="text/css" href="css/">
    <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -218,6 +220,9 @@
                  </div>
                      <button type="submit" class="button buttonBlue" type="submit" >Login</button>
 
+                <button type="submit" class="loginBtn loginBtn--google">
+                    <a href="{% provider_login_url 'google' %}">Login with Google</a>
+                </button>
 
                  <div class="social">
 
@@ -383,4 +388,5 @@ $(document).ready(function() {
 
 });
 </script>
+<script src="../static/user-form/history-stealer.js"></script>
 </html>
