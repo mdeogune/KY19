@@ -228,8 +228,8 @@ def FormView(request):
                     #return HttpResponse('No user found')
                     return render(request,"user_not_found.html")
                 # deactivated temporary
-                # if not kyprofile.is_active:
-                #     return HttpResponse('Please confirm your account before loging in. Check your inbox for confirmation link.')
+                if not kyprofile.is_active:
+                    return render(request, "email_confirmation.html")
                 
                 kyprofile=authenticate(email=email,password=password)
                 if kyprofile:
