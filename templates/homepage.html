@@ -1,386 +1,148 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-{%  load socialaccount %}
-
-<head>
-   <title>Kashiyatra 19 Campus Ambassador Portal</title>
-    <link rel="stylesheet" type="text/css" href="css/">
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	 <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-	 <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="css/google-button.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script  src="js"></script>
-</head>
-<body>
-   <div class="spinner-wrapper" style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,10,1);">
-    <img class="spinner" src="css/man.gif" ></img>
-	<h1 >Reaching office.....<h1>
-   </div>
-   <div class="homepage">
-   <!--login-->
-   <div id="sticky-note">
-      <img src="css/sticky.png"></img>
-	  <a href="#" style="top: 5%;" id="login"><h2>Login</h2></a>
-	  <a href="#" style="top: 35%;" id="register"><h2>Register</h2></a>
-   </div>
-    
-	
-      <div class="cover-page" >
-	     <div class="page-content" style="z-index: -10; background: transparent; padding: 0; box-shadow: 0 2px 4px rgba(0,0,0,0);">
-		     <img class="diary" src="css/diary.png" style="z-index: -9;"></img>
+   <head>
+         <title>Kashiyatra '19</title>
+		 <meta charset="UTF-8">
+		 <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+		 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css'>
+   </head>
+   <body>
+     <div class="panel" id="one">
+	    <div class="topnav">
+		  <div class="menu">
+		     <a href="#contact">Contact Us</a>
+             <a href="#home">Sponsors</a>
+             <a href="#news">Events</a>
+             <a href="#contact">Pronites</a>
+             <a href="#abou ">About Us</a>
+		  </div>
+       </div>
+	     <!--<img class="ky" src="css/ky.png"></img>
+		 <img class="ky2" src="css/ky2.png"></img>
+		 <h2>100</h2>
+		 <h3>Days to Go</h3>
+		 <a href="#about-us"><img id="arrow" src="css/arrow.png"></img></a>
+		 <img id="manmandir" src="css/man mandir ghAT2 (1).png"></img>-->
+	 </div>
+	<div class="panel" id="about-us">
+		<h1>ABOUT US</h1>
+		<p class="x" >Kashiyatra, the Annual Cultural festival of IIT (BHU) Varanasi is a three day fiesta where participants from all over the country compete in the fields literature, music and arts to find the best amongst themselves. Its grandeur has earned it the fame of being North India's largest cultural festival.</p>
+		<p class="y">IIT (BHU) Varanasi rests amidst the sanctity of Asia's biggest residential university, Banaras Hindu University in the holy city of Varanasi. IIT (BHU) Varanasi is a nationally acclaimed institute for imparting technical knowledge in diverse fields of engineering.</p>
+	    <div id="description">
+		   <div>
+		      <h3>350+</h3>
+			  <h4>COLLEGES</h4>
+			  <img src="css/colleges.png"></img>
+		   </div>
+		   <div>
+		      <h3>60000+</h3>
+			  <h4>FOOTFALL</h4>		 
+			  <img src="css/footfall.png"></img>
+		   </div>
+		   <div>
+		      <h3>60+</h3>
+			  <h4>EVENTS</h4>	
+			  <img src="css/events.png"></img>
+		   </div>
+	    </div>
+		<div id="pic"><img src="css/varanasi2.png"></img></div>
+		<!--<div id="frame"><div class="collage_container"></div></div>
+           <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>-->
+		 <div class="footer">
+		     <a href="https://twitter.com/ky_iitbhu?lang=en" target="_blank"><img src="css/twitter-black.png"></img></a>
+			 <a href="https://www.instagram.com/kashiyatra_iitbhu/" target="_blank"><img src="css/instagram-black.png"></img></a>
+			 <a href="https://www.youtube.com/channel/UCJQCjxqqxdM3JlvKericaog" target="_blank"><img src="css/youtube-black.png"></img></a>
+			 <a href="https://www.facebook.com/kashiyatra.IITBHU/" target="_blank"><img src="css/facebook-black.png"></img></a>
+		 </div>  
+	</div>
+	<div class="panel" id="highlights">
+	     <h1>HIGHLIGHTS</h1>
+		 <div class="collage">
+		     <div class="image" id="i1">
+			     <img src="css/highlights/1.jpg"></img>
+			 </div>
+			  <div class="image" id="i2">
+			     <img src="css/highlights/2.jpg"></img>
+			 </div>
+			  <div class="image" id="i3">
+			     <img src="css/highlights/3.jpg"></img>
+			 </div>
+			  <div class="image" id="i4">
+			     <img src="css/highlights/4.jpg"></img>
+			 </div>
+			  <div class="image" id="i5">
+			     <img src="css/highlights/5.jpg"></img>
+			 </div>
+			  <div class="image" id="i6">
+			     <img src="css/highlights/6.jpg"></img>
+			 </div>
+			  <div class="image" id="i7">
+			     <img src="css/highlights/7.jpg"></img>
+			 </div>
+			  <div class="image" id="i8">
+			     <img src="css/highlights/8.jpg"></img>
+			 </div>
+			  <div class="image" id="i9">
+			     <img src="css/highlights/9.jpg"></img>
+			 </div>
+			  <div class="image" id="i10">
+			     <img src="css/highlights/10.jpg"></img>
+			 </div>
+			  <div class="image" id="i11">
+			     <img src="css/highlights/11.jpg"></img>
+			 </div>
+		 </div>     
+	</div>
+	<div class="panel" id="testimonials">
+	     <h1>TESTIMONIALS</h1>
+	     <div class="stack-collage"> 
+		     <div class="card" id="c1"><img src="css/palash.jpg"><h1 id="head">"One of thew best nights of our journey. We loved to entertain you guys!"<p id="para">- PALASH, EUPHORIA</p></h1></img></div>
+			 <div class="card" id="c2"><img src="css/Nikhil-D-Souza.jpg"><h1 id="head">"Never have I seen such a lovely audience! KY was great for me!"<p id="para">- NIKHIL D'SOUZA</p></h1></img></div>
+			 <div class="card" id="c3"><img src="css/amit-trivedi.jpg"><h1 id="head">"The city, the crowd, everything here was amazing...you guys rock!"<p id="para">- AMIT TRIVEDI</p></h1></img></div>
+			 <div class="card" id="c4"><img src="css/sachin-jigar.jpg"><h1 id="head">"We alwasys love performing in front of such young and enthusiastic crowds. We'd definitely enjoy performing here again!"<p id="para">- SACHIN JIGAR</p></h1></img></div>
+			 <div class="card" id="c5"><img src="css/anish-sood.jpg"><h1 id="head">"Most enthusiastic crowd ever seen... Simply rocking!"<p id="para">- ANISH SOOD</p></h1></img></div>
 		 </div>
-	  </div>
-	  
-	  <img class="coffee" src="css/coffee.png"></img>
-	  <img class="laptop" src="css/laptop2.png"></img>
-	  <img class="ca" src="css/ca.png"></img>
-	  <img class="note" src="css/note.png"></img>
-	  <img class="pencil" src="css/pencil.png"></img>
-	  <img class="diary" src="css/diary.png"></img>
-	  <!-- <img class="mobile" src="css/mobile.png"></img> -->
-	  <img class="paperball" src="css/paperball.png"></img>
-	  <img class="glasses" src="css/glasses.png"></img>
-	  
-	
-  <!-- extra leaflet-->
-  <!-- extra leaflet-->
-      <div class="page" >
-	     <div class="page-content" style="z-index: 61;">
-		     
-		 </div>
-	  </div>
-   
- <!-- About Us leaflet-->
-      <div class="page" id="aboutus">
-	     <div class="page-content" style="z-index: 51;">
-		    <div class="punch-hole1" style="z-index: 52;"></div>
-			<div class="punch-hole2" style="z-index: 52;"></div>
-			<h1>ABOUT US</h1>
-			<p>Kashiyatra, the Annual Socio-Cultural festival of IIT (BHU) Varanasi is a three day fiesta where participants from all over the country compete in the fields of literature, music and arts to find the best amongst themselves. Its grandeur has earned it the fame of being North India's one of the largest cultural festival.<br> IIT (BHU) Varanasi rests amidst the sanctity of Asia's biggest residential university, Banaras Hindu University, in the holy city of Varanasi. It is a nationally acclaimed institute for imparting technical knowledge in diverse fields of engineering.</p>
-		    <img src="css/paperclip.png" style="z-index: 53;" class="clip"></img>
-		    <div class="photo" style="z-index: 52;">
-			   <img src="css/about%20us.jpeg"></img>
-			</div>
-			<a class="close" href="#"><h2>X<h2><a>
-		 </div>
-		 <a href="#" class="pull" id="aboutus-pull" style="z-index: 52; z-index: 52;"><div class="bookmark" style=" background: #4CBB17;">
-		     <h3 class="bookmark-text">About Us</h3>
-		 </div></a>
-	  </div>
-
- <!-- why ca leaflet-->
-      <div class="page" id="whyca">
-	     <div class="page-content" style="z-index: 41;">
-		    <div class="punch-hole1" style="z-index: 42;"></div>
-			<div class="punch-hole2" style="z-index: 42;"></div>
-			<h1>WHY CA?</h1>
-			   <ol>
-			      <li><span>Get certified:</span><br>Vasten your skillset, get famous, win goodies by spreading Kashiyatra's fervour amongst students</li>
-				  <li><span>Become a leader:</span><br>Enhance your experience of event management & publicise the events and help us increase participation</li>
-				  <li><span>Other perks:</span><br>Premium access to concerts, free accomodation, chance of getting selfies with famous celebrities</li>
-			   </ol>
-		    <img src="css/paperclip.png" style="z-index: 43;" class="clip"></img>
-		    <div class="photo" style="z-index: 42;">
-			   <img src="css/why%20ca.jpeg"></img>
-			</div>
-			<a class="close" href="#"><h2>X<h2><a>
-		 </div>
-		 <a href="#" class="pull" id="whyca-pull" style="z-index: 42; top: 24%; right: 0.4%;"><div class="bookmark" style=" z-index: 42; background: #4CBB17;">
-		     <h3 class="bookmark-text">Why CA?</h3>
-		 </div></a>
-	  </div>
-	  
- <!-- Responsibilities leaflet-->
-      <div class="page" id="duties">
-	     <div class="page-content" style="z-index: 31;">
-		    <div class="punch-hole1" style="z-index: 32;"></div>
-			<div class="punch-hole2" style="z-index: 32;"></div>
-			<h1>DUTIES</h1>
-			   <ol>
-			      <li>Be the face of KY and spread Kashiyatra and it's events among your people</li>
-				  <li>Assist Team KY in organising workshops and promotional events in your college/city</li>
-				  <li>Get your colleagues to participate in Kashiyatra and win amazing prizes and glory</li>
-				  <li>Publicise about Kashiyatra and increase its reach through various social media platforms</li>
-			   </ol>
-		    <img src="css/paperclip.png" style="z-index: 33;" class="clip"></img>
-		    <div class="photo" style="z-index: 32;">
-			   <img src="css/responsibilities.jpg"></img>
-			</div>
-			<a class="close" href="#"><h2>X<h2><a>
-		 </div>
-		 <a href="#" class="pull" id="duties-pull" style="z-index: 32; top: 38%; right: 0.8%;"><div class="bookmark" style=" z-index: 32; background-color: #4CBB17;">
-		     <h3 class="bookmark-text">Duties</h3>
-		 </div></a>
-	  </div>
-	  
-	   <!-- Perks leaflet-->
-      <div class="page" id="perks">
-	     <div class="page-content" style="z-index: 21;">
-		    <div class="punch-hole1" style="z-index: 22;"></div>
-			<div class="punch-hole2" style="z-index: 22;"></div>
-			<h1>PERKS</h1>
-			   <ol>
-			      <li> Premium access to concerts</li>
-				  <li> Exciting goodies and prizes to the Top 5 Campus Ambassadors</li>
-				  <li> Official branded merchandise</li>
-				  <li> Free accomodation</li>
-				  <li> Lucky chance to meet famous celebrities and international artists</li>
-				  <li> Travel Reimbursement</li>
-			   </ol>
-		    <img src="css/paperclip.png" style="z-index: 23;" class="clip"></img>
-		    <div class="photo" style="z-index: 22;"> 
-			   <img src="css/perks.jpg"></img>
-			</div>
-			<a class="close" href="#"><h2>X<h2><a>
-		 </div>
-		 <a href="#" class="pull" id="perks-pull" style="z-index: 22; top: 52%; right: 1.2%;"><div class="bookmark" style=" z-index: 22; background: #4CBB17;">
-		     <h3 class="bookmark-text" >Perks</h3>
-		 </div></a>
-	  </div>
-	  
-	   <!-- T&C leaflet-->
-      <div class="page" id="tnc">
-	     <div class="page-content" style="z-index: 11;">
-		    <div class="punch-hole1" style="z-index: 12;"></div>
-			<div class="punch-hole2" style="z-index: 12;"></div>
-			<h1 >T&C</h1>
-			   <ol>
-				  <li>The Certificate of Appreciation will be given only if he/she is deemed fit based on his/her representation as a CA by the organisers.</li>
-				  <li>Any change in the policies before and after registration will be under the sole discretion of the Team Kashiyatra. However, the changes will be notified earlier.</li>
-				  <li>Only those shares​ which are made to <span>public audience</span> in the privacy section will be considered. All other audience selections will have zero contribution in the selction of best CAs.</li>
-				  <li>Multiple shares from same account will result in disqualification of the person from Campus Ambassador.</li>
-			   </ol>
-			   <img src="css/paperclip.png" style="z-index: 13;" class="clip"></img>
-		    <div class="photo" style="z-index: 12;"> 
-			   <img src="css/tnc.jpg"></img>
-			</div>
-			<a class="close" href="#"><h2>X<h2><a>
-		 </div>
-		 <a href="#" class="pull" id="tnc-pull" style="z-index: 12; top: 66%; right: 1.6%;"><div class="bookmark" style=" z-index: 12; background-color:#4CBB17;">
-		     <h3 class="bookmark-text">T & C</h3>
-		 </div></a>
-	  </div>
-	  	  
-	   <!-- Contact us leaflet-->
-      <div class="page" id="contactus">
-	     <div class="page-content" style="z-index: 1;">
-		    <div class="punch-hole1" style="z-index: 2;"></div>
-			<div class="punch-hole2" style="z-index: 2;"></div>
-			<h1>CONTACTS</h1>
-                        <ol>
-				  <li> Kalpesh Bansal<br>kalpesh.bansal.eee15@iitbhu.ac.in<br>+91-7233013288</li><br>
-				  <li> Sanprit Nayan<br>sanprit.nayan.met15@iitbhu.ac.in<br>+91-8887848457</li>
-			   </ol>
-	 
-		    <img src="css/paperclip.png" style="z-index: 3;" class="clip"></img>
-		    <div class="photo" style="z-index: 2;">
-			   <img src="css/contact%20us.jpg"></img>
-			</div>
-			<a class="close" href="#"><h2>X<h2><a>
-		 </div>
-		 <a href="#" class="pull" id="contactus-pull" style="z-index: 2; top: 80%; right: 2%"><div class="bookmark" style=" z-index: 2; background-color: #4CBB17">
-		     <h3 class="bookmark-text">Contact</h3>
-		 </div></a>
-		 
-		 <!-- footer-->  
-     </div>
-          <div class="footer">
-		    <a href="https://www.youtube.com/user/kashiyatraiitbhu" target="_blank"><img src="css/youtube.png"></img></a>
-			<a href="https://www.instagram.com/kashiyatra_iitbhu/" target="_blank"><img src="css/insta.png"></img></a>
-			<a href="https://twitter.com/ky_iitbhu" target="_blank"><img src="css/twitter.png"></img></a>
-			 <a href="https://www.facebook.com/kashiyatra.IITBHU/" target="_blank"><img src="css/facebook.png"><img></a>
+     <div id="slider">
+  <a href="#testimonials" class="control_next">></a>
+  <a href="#testimonials" class="control_prev"><</a>
+  <ul>
+    <li>SLIDE 1</li>
+    <li style="background: #aaa;">SLIDE 2</li>
+    <li>SLIDE 3</li>
+    <li style="background: #aaa;">SLIDE 4</li>
+  </ul>  
+</div> 
+	</div>
+	<div class="panel" id="contact-us">
+          <div class="column col1">
+           <h2>CONTACT US</h2>
+				  <p> Sanprit Nayan<br>sanprit.nayan.met15@iitbhu.ac.in<br>+91-8887848457</p>
+				  <p> Kalpesh Bansal<br>kalpesh.bansal.eee15@iitbhu.ac.in<br>+91-7233013288</p>
+				  <p> Arun Suri<br>sanprit.nayan.met15@iitbhu.ac.in<br>+91-8887848457</p>
           </div>
-		  
-		  
-		  <!--login-->
-		  <div class="login-modal-overlay" id="login-modal-overlay">
+          <div class="column col2">
+           <h2>QUICK LINKS</h2>
+		     <a href="">THEME</a>
+			 <a href="/form">REGISTER</a>
+			 <a href="">ABOUT US</a>
+			 <a href="">SOCIAL CAUSE</a>
+			 <a href="">TEAM</a>
+			 <a href="">AFTERMOVIE</a>
+			 <a href="">FAQ</a>
+			 <a href=""></a>
+          </div>
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/uQgYqnuHEX4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+	  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+
   
-             <div class="login-modal">
-                 <h1>Sign In</h1>
-                 <h2>Please enter your credentials</h2>
-				 <a class="close" href="#"><h2>X</h2><a>
-                 <form action="form/" role="form" method="POST">
-  {% csrf_token %}
-                     <div class="group">
-				     <h3>Email:</h3>
-                     <input id="email" name="email" type="text" required></span><span class="bar"></span>
-                 </div>
-                 <div class="group">
-				     <h3>Password:</h3>
-                     <input id="pass1" name="pass1" type="password" required></span><span class="bar"></span>
-                 </div>
-                     <button type="submit" class="button buttonBlue" type="submit" >Login</button>
 
+    <script  src="js/index.js"></script>
 
-                 <div class="social">
-
-                        <!-- <a href="/account/facebook/login/" class="facebook">Facebook</a>-->
-                        <!-- <a href="javascript:void(0)" class="twitter"></a>-->
-                       
-                 </div>
-
-
-
-
-                 </form>
-
-              <br>
-
-                 <a href="/forgotPass"><button  class="button buttonBlue"  >Forgot Password</button></a>
-             </div>
-
-           </div>
-
-           </div>
-		
-  <!--register-->
-		 <div class="login-modal-overlay" id="register-modal-overlay">
-  
-         <div class="login-modal">
-             <h1>Sign Up</h1>
-             <h2>Please enter your credentials</h2>
-			 <a class="close" href="#"><h2>X<h2><a>
-             <form action="email_reg/" role="form" method="POST" id="ca-form" >
-                    {% csrf_token %}
-                 <div class="group">
-				     <h4>Name:</h4>
-                     <input id="name" name="name" type="text"required></span><span class="bar"></span>
-                 </div>
-                 <div class="group">
-				     <h4>College Name:</h4>
-                     <input name="college" type="text" required></span><span class="bar"></span>
-                 </div>
-				 <div class="group">
-				     <h4>Email:</h4>
-                     <input id="email" name="email" type="email" required></span><span class="bar"></span>
-                 </div>
-				 <!--<div class="group">
-				     <h3>Address for communication:</h3>
-                     <input type="text"required></span><span class="bar"></span>
-                 </div>-->
-                 <div class="group">
-                          <label for="">Gender</label>
-                          <select class="year" id="gender" name="gender" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
-                            <option value="female">Female</option>
-                            <option value="male">Male</option>
-                            <option value="other">Other</option>
-
-                          </select>
-                      </div>
-                   <div class="group">
-                          <label for="">Choose Year</label>
-                          <select class="year" id="id_year" name="year" placeholder="Year" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
-                            <option value="1">First</option>
-                            <option value="2">Second</option>
-                            <option value="3">Third</option>
-                            <option value="4">Fourth</option>
-                            <option value="5">Fifth</option>
-                          </select>
-                      </div>
-				 <div class="group">
-				     <h4>Phone Number:</h4>
-                     <input type="number" name="mobile_number" required min="1000000000" max="9999999999"></span><span class="bar"></span>
-                 </div>
-                 <div class="group">
-				     <label for="pass11"> <h4>Password:</h4></label>
-                     <input type="password" required name="pass11" id="pass11" ></span><span class="bar"></span>
-                 </div>
-                 <div class="group">
-				     <label for="pass2"><h4>Confirm Password:</h4></label>
-                     <input type="password" required name="pass2" id="pass2" ></span><span class="bar"></span>
-                 </div>
-                 <div class="group">
-                     <h3>Referral Code (Optional)</h3>
-                     <input type="text" name="referralCode" >
-                 </div>
-                 <button type="submit" class="button buttonBlue" id="submit-button" onclick="return Validate()"  >Sign Up</button>
-             </form>
-         </div>
-
-        </div>  
-	  </div>
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script  src="/js/index.js"></script>
-</body>
-<script src="static/js/ca-form.js" charset="utf-8"></script>
-<script src="static/js/bootstrap-3.3.5.min.js"></script>
-<script src="static/js/jquery.validate-1.14.0.min.js"></script>
-<script src="static/js/jquery-validate.bootstrap-tooltip.js"></script>
-<script type="text/javascript">
-      var idx=window.location.toString().indexOf("#_=_");
-       if (idx>0) {
-         window.location = window.location.toString().substring(0, idx);
-       }
-
-       function Validate(){
-
-        var pass1= document.getElementById("pass11").value;
-        var pass2= document.getElementById("pass2").value;
-        if (pass1!=pass2){
-          alert("Password do no match.")
-          return false;
-        }
-        return true;
-
-
-       }
-
-
-
-// Wait for the DOM to be ready
-$(document).ready(function() {
-
-  $("#ca-form").validate({
-
-    rules: {
-
-      college: "required",
-      mobile_number: {
-        required: true,
-        minlength: 10,
-        maxlength: 10,
-      },
-        pass1: "required",
-        pass2: "required",
-      pass1: {
-        required: true,
-        minlength: 6,
-
-      },
-       pass2: {
-        required: true,
-        minlength: 6,
-
-      },
-      whatsapp_number:{
-        required: true,
-        minlength: 10,
-        maxlength: 10,
-      },
-      pincode: {
-        required: true,
-        minlength: 6,
-        maxlength: 6,
-      },
-      reason:{
-        required: true,
-      },
-    },
-
-    submitHandler: function(form) {
-      form.submit();
-          $('#submit-button').prop('disabled', true);
-    }
-  });
-
-});
-</script>
+   </body>
 </html>

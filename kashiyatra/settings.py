@@ -5,21 +5,19 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "yqmjpc%wx0-=4ov&td)5i!$1cbx(7m)b7tcb5^g^n40=&2#sak"
 
-
 DEBUG = True
-#for heroku
+# for heroku
 # if os.environ.get('production', '') == 'True':
 #     DEBUG = False
 
 USE_TZ = True
-APPEND_SLASH  = True
+APPEND_SLASH = True
 
 # Application definition    
 
@@ -28,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.sites',
     'API',
-    #'django.contrib.sites',
+    # 'django.contrib.sites',
     'etc',
     'event',
     'users',
@@ -81,11 +79,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-
                 'django.template.context_processors.i18n',
+
                 # Required by allauth template tags
- #               "django.core.context_processors.request",
-          ],
+                #               "django.core.context_processors.request",
+                'django.template.context_processors.request'
+            ],
             'debug': DEBUG,
         },
     },
@@ -137,26 +136,26 @@ AUTH_USER_MODEL = 'users.KYProfile'
 # X_FRAME_OPTIONS = 'ALLOWALL'
 
 # XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
-#LOGIN_URL = '/form'
-LOGIN_URL= '/'
-LOGIN_URL_email= '/email_reg/'
-LOGIN_URL_social= '/accounts/'
+LOGIN_URL = '/form'
+# LOGIN_URL= '/'
+LOGIN_URL_email = '/email_reg/'
+LOGIN_URL_social = '/account/'
 
 SOCIALACCOUNT_QUERY_EMAIL = True
 LOGIN_REDIRECT_URL = "/dashboard/"
 
-ACCOUNT_EMAIL_REQUIRED=True
+ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_USER_EMAIL_FIELD = 'email'
-ACCOUNT_EMAIL_VERIFICATION=False
+ACCOUNT_EMAIL_VERIFICATION = False
+
 ACCOUNT_USER_USERNAME_FIELD = None
 
-
-SENDGRID_API_KEY ='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'
+SENDGRID_API_KEY = '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'
 EMAIL_BACKEND = "sgbackend.SendGridBackend"
 
 ACCOUNT_FORMS = {
@@ -188,8 +187,8 @@ SOCIALACCOUNT_PROVIDERS = {
         'VERSION': 'v2.4',
 
     },
-	
-'google': {
+
+    'google': {
         'SCOPE': [
             'profile',
             'email',
@@ -199,8 +198,6 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 
-
-    
 }
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
@@ -238,7 +235,7 @@ at a time
 '''
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "templates/angular/user/"), 
+    os.path.join(BASE_DIR, "templates/angular/user/"),
     os.path.join(BASE_DIR, "templates/angular/ca/"),
     # os.path.join(BASE_DIR, "templates/events/"),
 
@@ -247,13 +244,14 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-SITE_ID=1
+SITE_ID = 1
 if os.environ.get('production', '') == 'True':
-    SITE_ID=2
+    SITE_ID = 2
 
     DEBUG = False
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#SENDGRID_API_KEY = os.environ.get('sgkey', '')
+# SENDGRID_API_KEY = os.environ.get('sgkey', '')
+

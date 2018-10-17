@@ -1,238 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  
-  <title></title>
-  <meta name="description" content="Kashiyatra Campus Ambassador">
-  <link rel="stylesheet" href="../static/css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Exo:400,600,900" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/animate.css">
-  <link rel="stylesheet" href="/static/css/ca-form.css">
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>another login panel</title>
+
+
+
+
+      <link rel="stylesheet" href="/static/login/css/style.css">
 
 
 </head>
 
-
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-  input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-
-.ui-helper-hidden-accessible{
-  display: none;
-
-}
-
-.hero-image {
-  background-image: url("/static/creepy-halloween-56a6edde3df78cf77291043d.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.ui-menu-item-wrapper{
-
-  background: #f7f7f7;
-  width: 30%;
-}
-ul {
-  list-style-type: none;
-}
-
-</style>
 <body>
-{% if messages %}
 
- <div class="alert">
+  <div class="loginpanel" >
+  <form action="" role="form" method="POST">
+  {% csrf_token %}
 
-  <span class="closebtn" onclick="this.parentElement.style.display='none';" >&times;</span>
-     <b style="font-size:22px;">
-     {% for msg in messages %}
-  {{msg.message}}
-{% endfor %}
-    </b>
-</div>
-
-{% endif %}
-<div class="">
-  <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active" style="background-image:url(../static/img/cap1.jpg);  background-repeat: no-repeat;
-		  background-size:1450px;background-position:center;background-attachment:fixed;" >
-            <div class="intro">
-              <div class="intro--banner">
-<h1   >Kashiyatra</h1>
-<br><br><br>
-				<h2></h2>
-                 <a href="/account/facebook/login/" style="color:white;"><button> Register / Login with Facebook
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button></a>
-<br><br>
-			<a href="/account/google/login" style="color:white;"><button>Register / Login with Google
-                 	 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                	  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                   	 <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                 	 </g>
-                 	 </svg>
-                 	 <span class="btn-background"></span>
-               	 </button></a><br><br>
-<a href="/email_reg" style="color:white;"><button>Register with Email
-                 	 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                	  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                   	 <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                 	 </g>
-                 	 </svg>
-                 	 <span class="btn-background"></span>
-               	 </button></a>
-
-<br><br>
-
-                  <div class="container">
-      <div class="row">
-        <hr  /><br>
-          <h2 >Login</h2>
-
-          <div class="row">
-              <div class="col-sm-5">
-                  <br>
-                  <form action="" role="form" method="POST" id="ca-form">
-                    {% csrf_token %}
-                      <div class="form-group float-label-control">
-                          <label for="" s>Email</label>
-                          <input type="email" style="color" class="form-control" id="email" name="email" required="true" placeholder="Email">
-                      </div>
-
-                      <div class="form-group float-label-control">
-                          <label for="" >Password</label>
-                          <input type="password" style="" class="form-control" id="pass1" name="pass1" required="true" placeholder="Password">
-                          </div>
-
-                      <button class="btn btn-submit"  style="color:white;" type="submit">Login<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span></button>
-
-                  </form>
-                  <br>
-                  <a href="/forgotPass/" style="color:white;"><button>Forgot Password!
-                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                   </g>
-                   </svg>
-                   <span class="btn-background"></span>
-                 </button></a>
-<br><br>
-
-                  
-
-
-              </div>
-              
-          </div>
-      </div>
+  <div class="txt">
+    <input id="user" name="email" type="text" placeholder="Email" />
+    <label for="user" class="entypo-user"></label>
   </div>
- 
+  <div class="txt">
+    <input id="pwd" type="password" name="pass1" placeholder="Password" />
+    <label for="pwd" class="entypo-lock"></label>
+  </div>
+  <div class="buttons">
+    <input type="submit" value="Login" />
+    <span>
+      <a href="/email_reg" class="entypo-user-add register">Register</a>
+    <a href="/forgotPass" class="entypo-user-add register">Forgot Password</a>
+    </span>
+  </div>
+  </form>
+
+  <div class="hr">
+    <div></div>
+    <div>OR</div>
+    <div></div>
+  </div>
+
+  <div class="social">
+
+   <!--<a href="/account/facebook/login/" class="facebook"></a>
+    <a href="javascript:void(0)" class="twitter"></a>-->
+    <a href="/account/google/login/" class="googleplus"></a>
+    <a href={'login: allauth.account.forms.LoginForm
+'}></a>
+
+  </div>
 </div>
+
+<span class="resp-info"></span>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
 </body>
 
-<script src="/static/js/jquery-1.11.3.min.js"></script>
-<script src="/static/js/bootstrap-3.3.5.min.js"></script>
-<script src="/static/js/jquery.validate-1.14.0.min.js"></script>
-<script src="/static/js/jquery-validate.bootstrap-tooltip.js"></script>
-<script src="/static/js/ca-form.js" charset="utf-8"></script>
-<script type="text/javascript">
-      var idx=window.location.toString().indexOf("#_=_");
-       if (idx>0) {
-         window.location = window.location.toString().substring(0, idx);
-       }
-
-
-
-// Wait for the DOM to be ready
-$(document).ready(function() {
-
-  $("#ca-form").validate({
-
-    rules: {
-
-      college: "required",
-      mobile_number: {
-        required: true,
-        minlength: 10,
-        maxlength: 10,
-      },
-      whatsapp_number:{
-        required: true,
-        minlength: 10,
-        maxlength: 10,
-      }, 
-      pincode: {
-        required: true,
-        minlength: 6,
-        maxlength: 6,
-      },
-      reason:{
-        required: true,
-      },
-    },
-
-    submitHandler: function(form) {
-      form.submit();
-    }
-  });
-
-});
-</script>
-<!-- <script src="/static/js/1.12.0jquery-ui.min.js"></script> -->
-
-<script>
-
-       //     $( function() {
-       //   var availableTags = [
-       //     {% for clg in all_colleges %}
-       //         "{{clg}}",
-       //     {% endfor %}
-       //   ];
-       //   $("#id_college").autocomplete({
-       //     source: availableTags
-       //   });
-       // } );
-       // // over write the default autocomplete function to match the option starting with term
-       // $.ui.autocomplete.filter = function (array, term) {
-       //   var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
-       //   return $.grep(array, function (value) {
-       //     return matcher.test(value.label || value.value || value);
-       //   });
-       // };
-</script>
-<script>
-    $(document).ready(function(){
-    document.getElementById('l-loading').style.display='none';
-	})
-
-</script>
 </html>
-
