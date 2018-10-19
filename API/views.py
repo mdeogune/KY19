@@ -19,6 +19,7 @@ from users.apis import *
 from etc.models import *
 from event.models import *
 from itertools import chain
+from scripts import eventsheet
 
 class UserViewSet(viewsets.ModelViewSet):
 	permission_classes = (permissions.IsAdminUser,)
@@ -294,7 +295,7 @@ def registerTeam(request):
 	team.save()
 	team.members.add(*membersList)
 	team.save()
-
+	eventsheet.EventSheetUpdate(team)
 	response_data['status'] = 'registered'
 	return HttpResponse(
 		json.dumps(response_data),
@@ -336,6 +337,7 @@ def registerIndi(request):
 		team.members.add(*membersList)
 		team.save()
 		response_data['status'] = 'registered'
+		eventsheet.EventSheetUpdate(team)
 		return HttpResponse(
 			json.dumps(response_data),
 			content_type = "application/json"
