@@ -1,75 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-  {% include 'kybase.html' %}
-  <title>Complete Profile</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/animate.css">
-  <link rel="stylesheet" href="/static/css/ca-form.css">
+  <meta charset="UTF-8">
+  <title>Sign-Up/Login Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="/static/login/css/style.css">
+<style>.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}</style>
+
 </head>
-<style>
 
-  input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-
-.ui-helper-hidden-accessible{
-  display: none;
-
-}
-.ui-menu-item-wrapper{
-
-  background: #f7f7f7;
-  width: 30%;
-}
-ul {
-  list-style-type: none;
-}
-
-</style>
 <body>
-  <div class="container">
-      <div class="row">
-        <hr />
-          <h2>Register with Email</h2>
 
-          <div class="row">
-              <div class="col-sm-5">
-                  <br>
-                  <form action="" role="form" method="POST" id="ca-form" >
-                    {% csrf_token %}
-                      <div class="form-group float-label-control">
-                          <label for="">Email</label>
+  <div class="form">
+
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Register</a></li>
+        <li class="ta"><a href="/form">Log In</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="signup" class="loginpanel">
+          <h1>Register With Email</h1>
+
+          <form action="" method="post" role="form" id="ca-form">
+                                  {% csrf_token %}
+
+          <div class="top-row">
+	<div class="field-wrap">
+
                           <input type="email" class="form-control" id="email" name="email" required="true" placeholder="Email">
                       </div>
 
-                      <div class="form-group float-label-control">
-                          <label for="">Name</label>
+                      <div class="field-wrap">
                           <input type="text" class="form-control" id="name" name="name" required="true" placeholder="Name">
                       </div>
-<div class="form-group float-label-control">
-                          <label for="">Gender</label>
+               </div>
+<div class="field-wrap">
                           <select class="year" id="gender" name="gender" placeholder="gender" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
+                              <option selected disabled>Select Gender</option>
                             <option value="female">Female</option>
                             <option value="male">Male</option>
                             <option value="other">Other</option>
-                            
+
                           </select>
                       </div>
 
-                      <div class="form-group float-label-control">
-                          <label for="">College</label>
-                          <input type="text" id="id_college" name="college" class="form-control" required="true" placeholder="College">
+                      <div class="field-wrap">
+                          <input type="text" id="id_college" name="college" autocomplete="off" class="form-control" required="true" placeholder="College">
                       </div>
 
-                      <div class="form-group float-label-control">
-                          <label for="">Choose Year</label>
+                      <div class="field-wrap">
                           <select class="year" id="id_year" name="year" placeholder="Year" required="true" style="background-color: transparent; width:100%;;height:100%;font-size: 20px;padding: 1.5%;">
+                              <option selected disabled>Select Year</option>
                             <option value="1">First</option>
                             <option value="2">Second</option>
                             <option value="3">Third</option>
@@ -78,50 +89,55 @@ ul {
                           </select>
                       </div>
 
-                      <div class="form-group float-label-control">
-                          <label for="">Mobile Number</label>
+                      <div class="field-wrap">
                           <input type="number" class="form-control" name="mobile_number"  placeholder="Mobile Number">
                       </div>
-                      <div class="form-group float-label-control">
-                          <label for="">Referral Code</label>
+                      <div class="field-wrap">
                           <input type="text" class="form-control" name="ref"  placeholder="Referral Code">
                       </div>
-                      <div class="form-group float-label-control">
-                          <label for="">Password</label>
-                          <input type="password" class="form-control" name="pass1" id="pass1"  placeholder="Password">
+                      <div class="field-wrap">
+                          <input type="password" class="form-control" name="pass11" id="pass11"  placeholder="Password">
                       </div>
-                         <div class="form-group float-label-control">
-                          <label for="">Confirm Password</label>
+                         <div class="field-wrap">
                           <input type="password" class="form-control" name="pass2" id="pass2"  placeholder="Confirm Password">
                       </div>
 
-                   
 
-                      <button class="btn btn-submit" id="submit-button" onclick="return Validate()" type="submit">Done</button>
-                  </form>
+          <button type="submit" class="button button-block" id="submit-button" onclick="return Validate()" >Submit</button>
 
+          </form>
 
-              </div>
-              <div class="col-sm-4 col-sm-offset-3">
-                  <div class="panel panel-default">
-                      <div class="panel-heading">
-                          <h3 class="panel-title">
-                              Important!
-                          </h3>
-                      </div>
-                      <div class="panel-body">
-                          <ul>
-                              <li>Make sure your all your information is correct.</li>
-
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+            <div class="hr">
+    <div></div>
+    <div>OR</div>
+    <div></div>
   </div>
 
+   <div class="social">
+
+   <a href="/account/facebook/login/" class="facebook"></a>
+    <!--<a href="javascript:void(0)" class="twitter"></a>-->
+    <a href="/account/google/login/" class="googleplus"></a>
+
+  </div>
+
+        </div>
+
+
+      </div><!-- tab-content -->
+
+</div> <!-- /form -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+    <script  src="/static/login/js/index.js"></script>
+
+
+
+
 </body>
+
 <script src="/static/js/jquery-1.11.3.min.js"></script>
 <script src="/static/js/bootstrap-3.3.5.min.js"></script>
 <script src="/static/js/jquery.validate-1.14.0.min.js"></script>
@@ -135,7 +151,7 @@ ul {
 
        function Validate(){
 
-        var pass1= document.getElementById("pass1").value;
+        var pass1= document.getElementById("pass11").value;
         var pass2= document.getElementById("pass2").value;
         if (pass1!=pass2){
           alert("Password do no match.")
@@ -161,23 +177,23 @@ $(document).ready(function() {
         minlength: 10,
         maxlength: 10,
       },
-        pass1: "required",
+        pass11: "required",
         pass2: "required",
       pass1: {
         required: true,
         minlength: 6,
-       
+
       },
        pass2: {
         required: true,
         minlength: 6,
-       
+
       },
       whatsapp_number:{
         required: true,
         minlength: 10,
         maxlength: 10,
-      }, 
+      },
       pincode: {
         required: true,
         minlength: 6,
@@ -218,4 +234,113 @@ $(document).ready(function() {
        //   });
        // };
 </script>
+<script>
+
+     var availableTags = [
+            {% for clg in all_colleges %}
+                "{{clg}}",
+            {% endfor %}
+          ];
+
+
+          function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+      });
+}
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("id_college"),availableTags );
+</script>
+
 </html>

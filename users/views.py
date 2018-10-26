@@ -205,7 +205,10 @@ def EmailRegistration(request): # registration with email
             return render(request,"email_already_used.html")
 
     else:
-        return render(request, template_name)
+        context = {
+            'all_colleges': College.objects.all(),
+        }
+        return render(request, template_name,context)
     # else :
     #     if request.user.is_active :
     #         return redirect('/dashboard')

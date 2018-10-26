@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
   <meta charset="UTF-8">
-  <title>Kashiyatra 2019</title>
-
-
+  <title>Sign-Up/Login Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 
       <link rel="stylesheet" href="/static/login/css/style.css">
@@ -16,49 +15,66 @@
 
 <body>
 
-  <div class="loginpanel" >
-  <form action="" role="form" method="POST">
-  {% csrf_token %}
+  <div class="form">
 
-  <div class="txt">
-    <input id="user" name="email" type="text" placeholder="Email" />
-    <label for="user" class="entypo-user"></label>
-  </div>
-  <div class="txt">
-    <input id="pwd" type="password" name="pass1" placeholder="Password" />
-    <label for="pwd" class="entypo-lock"></label>
-  </div>
-  <div class="buttons">
-    <input type="submit" value="Login" />
-    <span>
-      <a href="/email_reg" class="entypo-user-add register">Register</a>
-    <a href="/forgotPass" class="entypo-user-add register">Forgot Password</a>
-    </span>
-  </div>
-  </form>
+      <ul class="tab-group">
+        <li class="ta"><a href="/email_reg">Register</a></li>
+        <li class="tab active"><a href="#login">Log In</a></li>
+      </ul>
 
-  <!-- <div class="hr">
+      <div class="tab-content">
+
+        <div id="login" class="loginpanel">
+
+
+          <form action="" method="post" role="form">
+              {% csrf_token %}
+
+            <div class="field-wrap">
+            <label>
+              Email Address
+            </label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Password
+            </label>
+            <input type="password" id="pass1" name="pass1" required/>
+          </div>
+
+          <p class="forgot"><a href="/forgotPass">Forgot Password?</a></p>
+
+          <button class="button button-block" value="Login">Log In</button>
+
+          </form>
+          <div class="hr">
     <div></div>
     <div>OR</div>
     <div></div>
   </div>
- -->
-  <!-- <div class="social">
+
+   <div class="social">
 
    <a href="/account/facebook/login/" class="facebook"></a>
-    <a href="javascript:void(0)" class="twitter"></a>
+    <!--<a href="javascript:void(0)" class="twitter"></a>-->
     <a href="/account/google/login/" class="googleplus"></a>
-    <a href={'login: allauth.account.forms.LoginForm
-'}></a>
 
-  </div> -->
-</div>
+  </div>
+        </div>
 
-<span class="resp-info"></span>
+      </div><!-- tab-content -->
+
+</div> <!-- /form -->
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
 
-</body>
+    <script  src="/static/login/js/index.js"></script>
 
+
+
+
+</body>
 </html>
