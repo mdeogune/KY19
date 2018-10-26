@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'corsheaders',
+    'django_extensions',
 
     'django.contrib.admin',
     'django.contrib.contenttypes',
@@ -177,7 +178,6 @@ SOCIALACCOUNT_PROVIDERS = {
             'verified',
             'locale',
             'timezone',
-            'link',
             'gender',
             'updated_time',
         ],
@@ -244,7 +244,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-SITE_ID = 1
+SITE_ID = 2
 if os.environ.get('production', '') == 'True':
     SITE_ID = 2
 
