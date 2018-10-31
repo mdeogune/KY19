@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<div class="content" style="font-family: 'Montserrat', sans-serif;background-color: #D9AC2A;color: whitesmoke">
+<div class="content" style="font-family: 'Montserrat', sans-serif;background-color: #8B008B;color: whitesmoke">
 <div class="container-fluid">
     <div id="accordion" class="accordion">
 
@@ -7,13 +7,13 @@
 
                     <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;" class="alert alert-info">{{message}}</p>
             </div>
-        <div class="card m-b-0" style="background-color:#D9AC2A">
+        <div class="card m-b-0" style="background-color:#8B008B">
             <div style="margin:3%"  >
               <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">REGISTER FOR EVENT</p>
 
             </div>
             <div   style="margin:4%" class="controls ">
-        <form class="form-inline"  role="form" autocomplete="off"style="margin:3%;background-color: #313231;padding-left: 25px" #eventForm="ngForm">
+        <form class="form-inline"  role="form" autocomplete="off"style="margin:3%;background-color: #000000;padding-left: 25px" #eventForm="ngForm">
 
           <div class="row">
           <div class="col-sm-3">
@@ -56,11 +56,11 @@
 <div *ngIf="!message">
 
               <div *ngIf="indReg">
-                <button type="submit" class="btn btn-primary" (click)="individualRegister()" style="background-color: #D9AC2A;color: whitesmoke" >Individual Register</button>
+                <button type="submit" class="btn btn-primary" (click)="individualRegister()" style="background-color: #8B008B;color: whitesmoke" >Individual Register</button>
               </div>
   <div *ngIf="teamReg">
       <div class="control-group col-xs-8" id="fields">
-          <div style="background-color: #313231;padding-left: 25px">
+          <div style="background-color: #000000;padding-left: 25px">
             <div class=" input-group ">
 
               <label class="control-label" for="" style="color: whitesmoke">Team Leader</label>
@@ -78,7 +78,7 @@
                       <input class="form-control" [(ngModel)]="members_kyid[in]" name="members[in]" required="true" type="text" placeholder="Member's KY Id (KY####)" />
                   </div><br><br>
               </div>
-              <button type="submit" class="btn btn-default" (click)="teamRegister($event);eventForm.reset();" [disabled]="!eventForm.form.valid" name="register" style="color: whitesmoke;background-color: #D9AC2A">Register</button>
+              <button type="submit" class="btn btn-default" (click)="teamRegister($event);eventForm.reset();" [disabled]="!eventForm.form.valid" name="register" style="color: whitesmoke;background-color: #8B008B">Register</button>
       </div>
   </div>
 </div>

@@ -26,14 +26,14 @@
               Email ID: nsai.sumanth.eee15@iitbhu.ac.in <br></b>
             </div>   -->
           </div >
-<div class= "card m-b-0" *ngIf="!if_canceled" style="margin-left:4%;width:90%;background-color: #313231;font-family: 'Montserrat', sans-serif;color:whitesmoke;">
-            <div class="card-header collapsed" style="margin:3%;background-color: #D9AC2A" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+<div class= "card m-b-0" *ngIf="!if_canceled" style="margin-left:4%;width:90%;background-color: #000000;font-family: 'Montserrat', sans-serif;color:whitesmoke;">
+            <div class="card-header collapsed" style="margin:3%;background-color: #8B008B" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 <a class="card-title" >
                     <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Click to see your event registrations</p>
                 </a>
             </div>
             <div id="collapseOne" class="card-block collapse" style="margin:4%">
-            <table class="table table-inverse" style="background-color: #313231">
+            <table class="table table-inverse" style="background-color: #000000">
               <thead>
                 <tr>
                   <th>#</th>
@@ -61,7 +61,7 @@
                   <div *ngIf="pr.teamLeader['ky_id']==ky_id">
               <!--     instead of 3 ky_id -->
                   <td>
-                     <button type="submit" style="background-color: #D9AC2A" class="btn btn-default" (click)="cancelRegister(pr.teamId)"    name="cancel">Delete team</button>
+                     <button type="submit" style="background-color: #8B008B" class="btn btn-default" (click)="cancelRegister(pr.teamId)"    name="cancel">Delete team</button>
                   </td>
                   </div>
 
@@ -84,14 +84,14 @@
         </div>
 
 
-<div class= "card m-b-0" style="margin-left:4%;width:90%;font-family: 'Montserrat', sans-serif;background-color: #313231;color: whitesmoke">
-            <div class="card-header collapsed" style="margin:3%;background-color: #D9AC2A" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1">
+<div class= "card m-b-0" style="margin-left:4%;width:90%;font-family: 'Montserrat', sans-serif;background-color: #000000;color: whitesmoke">
+            <div class="card-header collapsed" style="margin:3%;background-color: #8B008B" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1">
                 <a class="card-title" >
                     <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">See your referred registrations</p>
                 </a>
             </div>
             <div id="collapseOne1" class="card-block collapse" style="margin:4%">
-            <table class="table table-inverse" style="background-color: #313231">
+            <table class="table table-inverse" style="background-color: #000000">
               <thead>
                 <tr>
                   <th>#</th>
@@ -136,18 +136,18 @@
 
 
         </div>
-<div class="card m-b-0" *ngIf="if_canceled" style="font-family: 'Montserrat', sans-serif;background-color: #313231">
-  <div class="card-header collapsed" style="margin:3%;background-color: #D9AC2A" data-toggle="collapse">
+<div class="card m-b-0" *ngIf="if_canceled" style="font-family: 'Montserrat', sans-serif;background-color: #000000">
+  <div class="card-header collapsed" style="margin:3%;background-color: #8B008B" data-toggle="collapse">
 
                     <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Are you sure?</p>
 
             </div>
   <div  style="margin:4%">
-  <table class="table table-inverse" style="background-color: #313231">
+  <table class="table table-inverse" style="background-color: #000000">
               <thead>
                 <tr>
-                  <th><button type="submit" style="background-color: #D9AC2A" class="btn btn-default" (click)="yesButton()"    name="cancel">yes</button></th>
-                  <th><button type="submit" class="btn btn-default" style="background-color: #D9AC2A" (click)="cancelButton()"    name="cancel">cancel</button></th>
+                  <th><button type="submit" style="background-color: #8B008B" class="btn btn-default" (click)="yesButton()"    name="cancel">yes</button></th>
+                  <th><button type="submit" class="btn btn-default" style="background-color: #8B008B" (click)="cancelButton()"    name="cancel">cancel</button></th>
 
 
                 </tr>

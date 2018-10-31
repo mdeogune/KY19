@@ -2,14 +2,14 @@
 <div class="content" style="font-family: 'Montserrat', sans-serif;">
 <div class="container-fluid">
     <div id="accordion" class="accordion">
-        <div class="card m-b-0" style="background-color: #313231">
-            <div class="card-header collapsed" style="margin:3%;background-color: #D9AC2A" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        <div class="card m-b-0" style="background-color: #000000">
+            <div class="card-header collapsed" style="margin:3%;background-color: #8B008B" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 <a class="card-title" >
                     <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Click to see previous entries</p>
                 </a>
             </div>
             <div id="collapseOne" class="card-block collapse" style="margin:4%">
-            <table class="table table-inverse" style="background-color: #313231;color: whitesmoke;">
+            <table class="table table-inverse" style="background-color: #000000;color: whitesmoke;">
               <thead>
                 <tr>
                   <th>#</th>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="card m-b-0" style="background-color:rgb(49, 49, 50)">
-            <div class="card-header collapsed" style="margin:3%;background-color: #D9AC2A" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <div class="card-header collapsed" style="margin:3%;background-color: #8B008B" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                 <a class="card-title" >
                     <p style="color:whitesmoke;margin:auto;font-size:20px;cursor:pointer;">Click to add new entry</p>
                 </a>
@@ -76,7 +76,7 @@
               <label for="exampleInputEmail3" style="color: whitesmoke">College</label> <br>
               <input type="text" class="form-control" [(ngModel)]="newPR.college" name="college" required="true">
             </div>
-              <button type="submit" style="background-color: #D9AC2A;color: whitesmoke" class="btn btn-primary" (click)="addPR();prForm.reset();" [disabled]="!prForm.form.valid">{{button}}</button>
+              <button type="submit" style="background-color: #8B008B;color: whitesmoke" class="btn btn-primary" (click)="addPR();prForm.reset();" [disabled]="!prForm.form.valid">{{button}}</button>
           </div>
         </form>
             </div>
