@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card" style="background-color:rgba(39,39,43,0.9)">
-                    <div class="card-header" style="background-color: #34133c">
+                    <div class="card-header" style="background-color: #D9AC2A">
                         <h4 class="title">Edit Profile</h4>
 						<p class="category">Complete your profile</p>
                     </div>
@@ -41,7 +41,7 @@
 									<input type="number" required [(ngModel)]="user.mobile_number" class="form-control" name="mobile_number" value={{user.mobile_number}}>
 								</div>
 							</div>
-						
+
 						</div>
 							<div class="row">
 								<div class="col-md-12">
@@ -51,7 +51,7 @@
 									</div>
                                 </div>
 							</div>
-							
+
 							<div class="row">
 								<div class="col-md-4">
 									<div class="form-group label-floating">
@@ -59,9 +59,9 @@
 										<input class="form-control" name="year" value="{{user.year}}" required="true" disabled>
 									</div>
                                 </div>
-								
+
 							</div>
-                            <button type="submit" class="btn btn-primary pull-right" style="background-color: #34133c" [disabled]="!userform.form.valid" (click)="updateuser($event)" >{{button}}</button>
+                            <button type="submit" class="btn btn-primary pull-right" style="background-color: #D9AC2A" [disabled]="!userform.form.valid" (click)="updateuser($event)" >{{button}}</button>
                         </form>
                     </div>
                 </div>
