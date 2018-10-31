@@ -248,7 +248,7 @@ SITE_ID = 2
 if os.environ.get('production', '') == 'True':
     SITE_ID = 2
 
-    DEBUG = False
+    DEBUG = True
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
