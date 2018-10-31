@@ -10,6 +10,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 
 from django.views.decorators.csrf import csrf_exempt
+
 import json
 # import simplejson as json
 
@@ -217,6 +218,8 @@ def EmailRegistration(request): # registration with email
 
 def FormView(request):
     template_name='form.html'
+
+    logout(request)
     print (request.user.is_authenticated())
     if not request.user.is_authenticated():
         if request.method == 'POST':
@@ -246,6 +249,7 @@ def FormView(request):
         else:
             return render(request,template_name)
     else:
+        print("already")
         return redirect('/dashboard')
 
 @login_required(login_url=LOGIN_URL)
