@@ -3,7 +3,7 @@ COLORS
 *****************************/
 section:nth-child(1) {
 	background: #292929;
-  background-image: url(1.jpg);
+  background-image: url(1.jpeg);
   background-repeat:no-repeat;
 background-size: auto 45%;
   color: white;
@@ -11,7 +11,7 @@ background-size: auto 45%;
 
 section:nth-child(2) {
   background: #292929;
-    background-image: url(2.jpg);
+    background-image: url(2.jpeg);
   background-repeat:no-repeat;
   background-size: auto 45%;
   color: white;
@@ -19,7 +19,7 @@ section:nth-child(2) {
 
 section:nth-child(3) {
   background: #292929;
-    background-image: url(3.jpg);
+    background-image: url(3.jpeg);
   background-repeat:no-repeat;
   background-size: auto 45%;
   color: white;
@@ -27,32 +27,32 @@ section:nth-child(3) {
 
 section:nth-child(4) {
   background: #292929;
-    background-image: url(4.jpg);
+    background-image: url(4.jpeg);
   background-repeat:no-repeat;
   background-size: auto 45%;
   color: white;
 }
 section:nth-child(5) {
   background: #292929;
-    background-image: url(5.jpg);
+    background-image: url(5.jpeg);
   background-repeat:no-repeat;
   background-size: auto 45%;
   color: white;
 }section:nth-child(6) {
   background: #292929;
-    background-image: url(6.jpg);
+    background-image: url(6.jpeg);
   background-repeat:no-repeat;
   background-size: auto 45%;
   color: white;
 }section:nth-child(7) {
   background: #292929;
-    background-image: url(7.jpg);
+    background-image: url(7.jpeg);
   background-repeat:no-repeat;
   background-size: auto 45%;
   color: white;
 }section:nth-child(8) {
   background: #292929;
-    background-image: url(8.jpg);
+    background-image: url(8.jpeg);
   background-repeat:no-repeat;
   background-size: auto 45%;
   color: white;
@@ -214,10 +214,10 @@ p{
 }
 @media only screen and (min-width: 700px) and (orientation: portrait){
 h1{
-	padding-top:36vh;
+	padding-top:41vh;
 }
 p{
-	padding-top:4vh;
+	padding-top:2vh;
 }
 }
 
