@@ -16,8 +16,12 @@ from django.template.loader import get_template
 from django.core.mail import EmailMultiAlternatives
 
 # @login_required(login_url = LOGIN_URL)
-def eventPage(request):
-    template_name = 'events/index.html'
+def eventPagePc(request):
+    template_name = 'events/pc/index.html'
+    return render(request, template_name, {})
+
+def eventPageMobile(request):
+    template_name = 'events/mobile/index.html'
     return render(request, template_name, {})
 
 def eventCatPage(request, eventCatName):
