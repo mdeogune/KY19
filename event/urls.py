@@ -8,7 +8,8 @@ app_name='event'
 
 urlpatterns = [
 	
-	url(r'^events/$', eventPage, name= 'events_index'),
+	url(r'^events/pc$', eventPagePc, name= 'events_index'),
+	url(r'^events/mobile$', eventPageMobile, name= 'events_index'),
 	url(r'^events/(?P<eventCatName>[\w|\W]+)$', eventCatPage, name= 'events_category_reg'),
 	url(r'^events/teamRegister/(?P<eventName>[\w|\W]+)$', eventRegistration, name= 'events_reg'),
 	url(r'^events/individualRegister/$', individualReg, name= 'ind_reg'),
