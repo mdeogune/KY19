@@ -73,7 +73,7 @@ h1 {
 #about-us p {
 	position: absolute;	
 	width: 63%;
-	font-size: 23px;
+	font-size: 13px;
 	top: 25%; left: 0; right: 0;
 	margin: auto;
 	font-family: 'Cabin', sans-serif;
@@ -411,7 +411,7 @@ iframe {
 	#contact-us p{
 		list-style: none;
 		font-family: 'Cabin', sans-serif;
-		font-size: 18px;
+		font-size: 12px;
 	}
 	#contact-us a {
 		list-style: none;
@@ -766,7 +766,7 @@ iframe {
 	width: 25%;
 	}
 #contact-us p{
-		font-size: 15px;
+		font-size: 12px;
 }
 .footer {
 	height: 20vh;
@@ -912,7 +912,7 @@ iframe {
 	height: 20vh;
 	width: 5%;
 }
-}
+
 
 
 
