@@ -71,13 +71,12 @@ h1 {
 #about-us p {
 	position: absolute;	
 	width: 63%;
-	font-size: 23px;
+	font-size: 21px;
 	top: 25%; left: 0; right: 0;
 	margin: auto;
 	font-family: 'Cabin', sans-serif;
 	text-align: justify;
 	text-align-last: center;
-	font-size: 19px;
 }
 
 #description {
