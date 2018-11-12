@@ -433,7 +433,6 @@ def mobileRegister(request): # registration with email
         return HttpResponse(status=status.HTTP_403_FORBIDDEN)
 
 
-
 @api_view(['POST'])
 @authentication_classes([])
 @permission_classes([])
