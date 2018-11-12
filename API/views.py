@@ -431,3 +431,15 @@ def mobileRegister(request): # registration with email
             return Response(user.data, status=status.HTTP_400_BAD_REQUEST)
     else:
         return HttpResponse(status=status.HTTP_403_FORBIDDEN)
+
+
+
+@api_view(['POST'])
+@authentication_classes([])
+@permission_classes([])
+def payment(request):
+	data = request.data
+	print(data)
+	print(data['userEmailId'])
+	print(data['uniqueOrderId'])
+	return HttpResponse('Hello')
