@@ -431,3 +431,30 @@ def mobileRegister(request): # registration with email
             return Response(user.data, status=status.HTTP_400_BAD_REQUEST)
     else:
         return HttpResponse(status=status.HTTP_403_FORBIDDEN)
+
+
+@csrf_exempt
+def payment(request):
+	if request.method == "POST":
+		post = json.loads(request.body.decode("utf-8"))
+
+		
+	# print(data['userEmailId'])
+	# print(data['uniqueOrderId'])
+		try:
+			data=post
+			user=KYProfile.objects.get(email=data['userEmailId'])
+			if data['uniqueOrderId']:
+				user.is_paid=True
+				user.paid_amt=data['ticketPrice']
+				user.payment_id=data['uniqueOrderId']
+				user.save()
+			context={
+				'email':data['userEmailId'] ,
+				'payment_id':data['uniqueOrderId'],
+				'amount':data['ticketPrice'],
+				'user':user,
+			}
+			return redirect('/dashboard')
+		except:
+			return redirect('/dashboard')

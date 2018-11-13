@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^deleteteam/$', deleteteam),
     url(r'^referedreg/$', getReferedReg),
 
+    url(r'^payment/$', payment),
+
     url(r'^sub-event/(?P<eventName>[\w|\W]+)$',subEvent),
 
     ##mobile app
