@@ -441,4 +441,16 @@ def payment(request):
 	print(data)
 	print(data['userEmailId'])
 	print(data['uniqueOrderId'])
-	return HttpResponse('Hello')
+	user=KYProfile.objects.get(email=data['userEmailId'])
+	if data['uniqueOrderId']:
+		user.is_paid=True
+		user.paid_amt=data['ticketPrice']
+		user.payment_id=data['uniqueOrderId']
+		user.save()
+	context={
+		'email':data['userEmailId'] ,
+		'payment_id':data['uniqueOrderId'],
+		'amount':data['ticketPrice'],
+		'user':user,
+	}
+	return render(request,'payment_status.html',context)
