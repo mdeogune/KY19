@@ -1,4 +1,4 @@
-html, body{ background-color:#1a948d; }	
+html, body{ background-color:#f47a42; }	
 
 body
 { 
@@ -114,9 +114,9 @@ a:hover
 	
 	.carouselItemInner
 	{
-		width:320px;
-		height:130px;
-		position:absolute;
+		width:contain;
+		height:contain;
+		position:relative;
 		background-color:rgba(255, 255, 255, .75);
 		border:10px solid rgba(255, 255, 255, .5);
 		color:aqua;
