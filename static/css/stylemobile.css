@@ -28,7 +28,7 @@ html {
   color: white;
   text-align: center;
 
- 
+
 }
 
 .footer {
@@ -71,7 +71,7 @@ h1 {
 }
 
 #about-us p {
-	position: absolute;	
+	position: absolute;
 	width: 63%;
 	font-size: 13px;
 	top: 25%; left: 0; right: 0;
@@ -90,7 +90,7 @@ h1 {
 	  margin: auto;
       font-weight: 800;
   }
-  
+
   #description div {
 	 display: inline-block;
 	 width: 28%;
@@ -102,7 +102,7 @@ h1 {
 	 padding-bottom: 7px;
 	 margin: 5px;
   }
-  
+
   #description h3 {
 	  text-align: center;
 	  font-size: 32px;
@@ -110,8 +110,8 @@ h1 {
 	  margin: 0;
 	  padding-bottom: 0;
 	   margin: 2px auto;
-   } 
-  
+   }
+
   #description h4 {
 	  text-align: center;
 	  font-size: 18px;
@@ -127,7 +127,7 @@ h1 {
 	  display: inline-block;
 	   margin: 2px auto;
   }
-  
+
   #highlights .collage {
 	position: absolute;
 	height: 68%;
@@ -154,7 +154,7 @@ h1 {
      height: 55%;
      width: 23%;
 }
- 
+
  .image img {
 	 height: 100%;
 	 width: 100%;
@@ -248,9 +248,9 @@ h1 {
 #i11:hover {
 	z-index: 1000;
 }
-  
+
 #testimonials {
-	
+
 }
 
 #head
@@ -314,7 +314,7 @@ h1 {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-} 
+}
 
 #c1 {
 	left: 8%;
@@ -371,7 +371,7 @@ h1 {
 
 #contact-us h1{
 	top: 10%;
-	
+
 }
 
 #contact-us h2{
@@ -379,7 +379,7 @@ h1 {
 	font-size: 30px;
 	padding: 0;
 	margin: 0;
-	
+
 }
 .column {
 	position: absolute;
@@ -390,7 +390,7 @@ h1 {
 	margin-left: 0%;
 	margin-top: 0%;
     padding: 0;
-	
+
 }
 .col2 {
 	right: 10%;
@@ -576,7 +576,7 @@ aside a {
   position: absolute;
   top: 0%; bottom: 0;
   left: 1%;
-  margin: auto;
+  margin: 20px auto auto;
   z-index: 99;
   height: 10%;
 
@@ -621,7 +621,7 @@ aside a {
 	-ms-transform-origin: 13%;
 	-webkit-transform-origin: 13%;
 	transform-origin: 13%;
-	
+
 }
 .toggle-bar::after {
   top: 4px;
@@ -633,7 +633,7 @@ aside a {
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
-	
+
 }
 .toggle-wrap.active .toggle-bar::after {
 	-ms-transform: rotate(-45deg);
@@ -775,7 +775,7 @@ iframe {
 }
 
 @media screen and (max-width: 1025px) and (orientation: portrait){
-	
+
 }
 	#highlights .collage {
 	height: 70%;
@@ -912,7 +912,3 @@ iframe {
 	height: 20vh;
 	width: 5%;
 }
-
-
-
-

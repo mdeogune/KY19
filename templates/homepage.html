@@ -9,14 +9,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 
-  
-  
+
+
       <link rel="stylesheet" media='screen and (min-width: 1024px) and (max-width: 9999px)' href="css/style.css">
 	  <link rel="stylesheet" media='screen and (min-width: 750px) and (max-width: 1024px)' href="css/stylemobile.css">
 	  <link rel="stylesheet" media='screen and (min-width: 10px) and (max-width: 749px)' href="css/stylemobile2.css">
-	  
 
-  
+
+
 </head>
 
 <body>
@@ -35,7 +35,7 @@
   uniform vec2 offset;
   uniform vec2 repeat;
   uniform vec3 color;
-  
+
   void main() {
     vUv = uv * repeat + offset;
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
@@ -47,7 +47,7 @@
   uniform sampler2D texture;
   uniform vec3 color;
   uniform float opacity;
-  
+
   void main(void) {
     gl_FragColor = texture2D(texture, vUv) * vec4(color, opacity);
   }
@@ -70,7 +70,7 @@
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/204379/OrbitControls.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
     <script  src="js/index.js"></script>
-	
+
 </div>
 
    <div id="content">
@@ -99,9 +99,9 @@
 			 <a href="https://www.instagram.com/kashiyatra_iitbhu/" target="_blank"><img src="css/instagram-white.png"></img></a>
 			 <a href="https://www.youtube.com/channel/UCJQCjxqqxdM3JlvKericaog" target="_blank"><img src="css/youtube-white.png"></img></a>
 			 <a href="https://www.facebook.com/kashiyatra.IITBHU/" target="_blank"><img src="css/facebook-white.png"></img></a>
-		 </div>  
+		 </div>
 	 <div class="scroll">
-  
+
      <div class="panel" id="about-us">
          <h1 style="font-size: 45px">ABOUT US</h1>
 		 <p >Kashiyatra, the Annual Cultural festival of IIT (BHU) Varanasi is a three day fiesta where participants from all over the country compete in the fields literature, music and arts to find the best amongst themselves. Its grandeur has earned it the fame of being North India's largest cultural festival. IIT (BHU) Varanasi rests amidst the sanctity of Asia's biggest residential university, Banaras Hindu University in the holy city of Varanasi. IIT (BHU) Varanasi is a nationally acclaimed institute for imparting technical knowledge in diverse fields of engineering.</p>
@@ -113,12 +113,12 @@
 		   </div>
 		   <div>
 		      <h3>60000+</h3>
-			  <h4>FOOTFALL</h4>		 
+			  <h4>FOOTFALL</h4>
 			  <img src="css/footfall.png"></img>
 		   </div>
 		   <div>
 		      <h3>60+</h3>
-			  <h4>EVENTS</h4>	
+			  <h4>EVENTS</h4>
 			  <img src="css/events.png"></img>
 		   </div>
 	    </div>
@@ -159,11 +159,11 @@
 			  <div class="image" id="i11">
 			     <img src="css/highlights/11.jpg"></img>
 			 </div>
-		 </div>     
+		 </div>
      </div>
      <div class="panel" id="testimonials">
          <h1 style="font-size: 45px">TESTIMONIALS</h1>
-		 <div class="stack-collage pc"> 
+		 <div class="stack-collage pc">
 		     <div class="card" id="c1"><img src="css/palash.jpg"><h2 id="head">"One of thew best nights of our journey. We loved to entertain you guys!"<p id="para">- PALASH, EUPHORIA</p></h2></img></div>
 			 <div class="card" id="c2"><img src="css/Nikhil-D-Souza.jpg"><h2 id="head">"Never have I seen such a lovely audience! KY was great for me!"<p id="para">- NIKHIL D'SOUZA</p></h2></img></div>
 			 <div class="card" id="c3"><img src="css/amit-trivedi.jpg"><h2 id="head">"The city, the crowd, everything here was amazing...you guys rock!"<p id="para">- AMIT TRIVEDI</p></h2></img></div>
@@ -223,7 +223,7 @@
            <h2  style="font-size: 25px">QUICK LINKS</h2>
 		     <a href="" >THEME</a>
 			 <a href="/email_reg" >REGISTER</a>
-			 <a href=""  >ABOUT US</a>
+			 <a href="#about-us"  >ABOUT US</a>
 			 <a href=""  >SOCIAL CAUSE</a>
 			 <a href=""  >TEAM</a>
 			 <a href=""  >AFTERMOVIE</a>
@@ -235,7 +235,7 @@
      </div>
 	 </div>
    </div>
-  
+
 
 <script  src="js/index1.js"></script>
 </body>
