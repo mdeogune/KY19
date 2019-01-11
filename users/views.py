@@ -380,3 +380,5 @@ def forgotPassword(request):
     # else:
     #     raise Http404('NOT ALLOWED')
 
+def pronites(request):
+    return render(request,'pronites.html')

@@ -1,0 +1,180 @@
+/*  ========================
+        BASIC STYLING
+    ========================  */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  background: rgba(24,67,99,1);
+  background-image: url("bg3.jpg");
+  
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#184363', endColorstr='#184363', GradientType=1 );
+}
+
+a, a.link {
+  display: block;
+  padding: 33px 0 0 0;
+  color: #313131;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1 {
+	font-size: 90px;
+	color: white;
+	font-family: Montserrat;
+	text-align: center;
+}
+
+
+
+/*  ================================================
+            TICKET STYLING & COUPON EFFECT
+    ================================================  */
+.ticket {
+position: relative;
+display: table;
+width: 600px;
+height: 306px;
+margin: 50px auto;
+padding-bottom: 57px;
+background: #ffff14;
+text-align: center;
+}
+
+.ticket::before {
+  content:"";
+  position: absolute;
+  top: 56.5%;
+  left: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #05071C;
+}
+
+.ticket::after {
+  content:"";
+  position: absolute;
+  top: 56.5%;
+  right: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #05071C;
+}
+
+/*  ================================================
+                    RIBBON EFFECT
+    ================================================  */
+.ribbon {
+position: absolute;
+display: block;
+top: -4px;
+right: -4px;
+width: 110px;
+height: 110px;
+overflow: hidden;
+}
+
+.ribbon .label {
+position: relative;
+display: block;
+left: -10px;
+top: 23px;
+width: 158px;
+padding: 10px 0;
+font-size: 15px;
+text-align: center;
+color: #fff;
+background-color: #e85e68;
+-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+-ms-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+-webkit-transform: rotate(45deg) translate3d(0,0,0);
+-moz-transform: rotate(45deg) translate3d(0,0,0);
+-ms-transform: rotate(45deg) translate3d(0,0,0);
+transform: rotate(45deg) translate3d(0,0,0);
+}
+
+.label:before, .label:after {
+content: '';
+position: absolute;
+bottom: -4px;
+border-top: 4px solid #a71c26;
+border-left: 4px solid transparent;
+border-right: 4px solid transparent;
+}
+
+.label:before {
+left: 0;
+}
+
+.label:after {
+right: 0;
+}
+
+
+
+/*  ================================================
+                        CONTENT
+    ================================================  */
+span {
+  display: block;
+  font-size: 29px;
+  color: black;
+  fontweight: 700;
+}
+
+strong {
+    display: block;
+    font-size: 45px;
+    color: #a52958;
+    margin: -8px;
+}
+
+em {
+  display: block;
+  font-size: 33px;
+  font-style: normal;
+  color: rgba(0,0,0,.6);
+  border-top: 3px dashed rgba(0,0,0,.7);
+  padding: 10px 0;
+}
+
+img {
+	width: 90%;
+}
+
+/*  ================================================
+              ACTION CALL & ARROW UP EFFECT
+    ================================================  */
+.button {
+  display: block;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 57px;
+  padding: 0;
+  line-height: 58px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 0;
+  background-color: black;
+}
+
+.button::before {
+  content:"";
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 20px);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 10px solid black;
+}
+
+
+

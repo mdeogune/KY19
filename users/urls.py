@@ -7,6 +7,8 @@ from . import views
 urlpatterns = [
     url(r'^$', IndexView),
     url(r'^ca/$', CAIndexView),
+    url(r'^pronites/$', pronites),
+
     url(r'^form/$', FormView),
     url(r'^user-form/$', UserFormView),
     url(r'^ca-form/$', CaFormView),
