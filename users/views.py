@@ -382,3 +382,7 @@ def forgotPassword(request):
 
 def pronites(request):
     return render(request,'pronites.html')
+
+
+def Faq(request):
+    return render(request,'Faq.html')

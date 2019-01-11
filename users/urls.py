@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^$', IndexView),
     url(r'^ca/$', CAIndexView),
     url(r'^pronites/$', pronites),
+    url(r'^Faq/$', Faq),
 
     url(r'^form/$', FormView),
     url(r'^user-form/$', UserFormView),
